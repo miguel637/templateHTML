@@ -1,0 +1,142 @@
+//Saco información si es día de pago antes o despues en caso que sea festivo
+if(input.SI_LA_FECHA_DE_PAGO_ES_UN_DIA_NO_HABIL_EL_PAGO_SE_REALIZARA == "EL ULTIMO DIA HABIL ANTES DE LA FECHA DE PAGO")
+{
+	//Aqui para día antes
+	diaAntes_ = true;
+}
+if(input.SI_LA_FECHA_DE_PAGO_ES_UN_DIA_NO_HABIL_EL_PAGO_SE_REALIZARA == "EL PRIMER DIA HABIL DESPUES DE LA FECHA DE PAGO")
+{
+	//Aqui para día despues
+	diaAntes_ = false;
+}
+//Envío de planilla de novedades: 5 días hábiles antes de la fecha de pago
+//Recepción de novedades: 4 días hábiles antes de la fecha de pago
+//Envío de Prenomina: 3 días hábiles antes de la fecha de pago
+//Aprobación de Prenomina: 2 días hábiles antes de la fecha de pago
+mesesText_ = {"Enero","Febrero","Marzo","Mayo","Abril","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
+//Variables globales
+primerPago_ = 0;
+segundoPago_ = 0;
+unicoPago_ = 0;
+contenidoTablas_ = "";
+quincenal_ = {};
+mensual_ = {};
+registrado = false;
+nombreCentros = "";
+
+for each centros in Centro_de_Costo [ compensacion == input.ID ]
+{
+	if(centros.Periocidad_de_Pago == "QUINCENAL")
+	{
+		primerDiaPago_ = centros.Dias_de_Pago.getprefix(" -");
+		segundoDiaPago_ = centros.Dias_de_Pago.getsuffix("- ");
+		for each index diasRegistrados in quincenal_
+        {
+			if(diasRegistrados.get(diasRegistrados).get(0) == primerDiaPago_ && diasRegistrados.get(diasRegistrados).get(1) == segundoDiaPago_)
+			{
+				nombreCentros = "/"+centros.Centro_de_Costo.toUpperCase();		
+			}
+			else 
+            {
+				quincenal_.add({primerDiaPago_, segundoDiaPago_});
+				nombreCentros = "/"+centros.Centro_de_Costo.toUpperCase();
+            }
+		}
+	}
+	if(centros.Periocidad_de_Pago == "MENSUAL")
+	{
+		unicoPago_ = centros.Dias_de_Pago.toNumber();
+		for each diaRegistrado_ in unicoPago_ 
+        {
+			if(diaRegistrado_ == unicoPago_)
+			{
+				nombreCentrosMes_ = "/"+centros.Centro_de_Costo.toUpperCase();
+			}
+			else 
+            {
+				mensual_.add(unicoPago_);
+				nombresCentrosMes_ = "/"+centros.Centro_de_Costo.toUpperCase();
+            }
+        } 
+	}
+} 
+
+
+//Saco la información de días de pago
+for each  centros in Centro_de_Costo[compensacion == input.ID]
+{
+	if(centros.Periocidad_de_Pago == "QUINCENAL")
+	{
+		primerDiaPago_ = centros.Dias_de_Pago.getprefix(" -");
+		segundoDiaPago_ = centros.Dias_de_Pago.getsuffix("- ");
+			try 
+			{
+				for each index mes in mesesText_
+				{
+					contenidoMes_ = '<h2>' + mesesText_.get(mes) + '</h2>' +'<h4>' +centros.Centro_de_Costo + '</h4>' +'<table class ="content-table"><tr><th>Nombre</th><th>Fecha</th></tr>';
+					mesx = mes + 1;
+					if(mesx < 10)
+					{
+						mesTxt_ = "0" + mesx;
+					}
+					else
+					{
+						mesTxt_ = mesx + "";
+					}
+					primerPago_ = mesTxt_ + "," + primerDiaPago_.toNumber() + "," + zoho.currenttime.getYear();
+					segundoPago_ = mesTxt_ + "," + segundoDiaPago_.toNumber() + "," + zoho.currenttime.getYear();
+					fechaBase1_ = toDate(primerPago_,"MM,d,yyyy");
+					fechaBase2_ = toDate(segundoPago_,"MM,d,yyyy");
+					envioPlanilla1_ = fechaBase1_.subDay(lib.Fechas.addworksdaysV1(fechaBase1_,-5,false));
+					envioPlanilla2_ = fechaBase2_.subDay(lib.Fechas.addworksdaysV1(fechaBase2_,-5,false));
+					recepcionNovedades1_ = fechaBase1_.subDay(lib.Fechas.addworksdaysV1(fechaBase1_,-4,false));
+					recepcionNovedades2_ = fechaBase2_.subDay(lib.Fechas.addworksdaysV1(fechaBase2_,-4,false));
+					envioPrenomina1_ = fechaBase1_.subDay(lib.Fechas.addworksdaysV1(fechaBase1_,-3,false));
+					envioPrenomina2_ = fechaBase2_.subDay(lib.Fechas.addworksdaysV1(fechaBase2_,-3,false));
+					aprobacionPrenomina1_ = fechaBase1_.subDay(lib.Fechas.addworksdaysV1(fechaBase1_,-2,false));
+					aprobacionPrenomina2_ = fechaBase2_.subDay(lib.Fechas.addworksdaysV1(fechaBase2_,-2,false));
+					contenidoMes_ = contenidoMes_ + "<tr style='text-align: right; background-color:#C2000B'> <td style='color: #ffffff;'><b>Primera quincena</b></td> <td></td></tr><tr><td>Envío de planilla</td><td>" + envioPlanilla1_ + "</td></tr><tr><td>Recepción de novedades</td><td>" + recepcionNovedades1_ + "</td></tr><tr><td>Envío de prenomina</td><td>" + envioPrenomina1_ + "</td></tr><tr><td>Aprobación de prenomina</td><td>" + aprobacionPrenomina1_ + "</td></tr><tr style='text-align: right; background-color:#C2000B'> <td style='color: #ffffff;'><b>Segunda quincena</b></td> <td></td></tr><td>Envío de planilla</td><td>" + envioPlanilla2_ + "</td></tr><tr><td>Recepción de novedades</td><td>" + recepcionNovedades2_ + "</td></tr><tr><td>Envío de prenomina</td><td>" + envioPrenomina2_ + "</td></tr><tr><td>Aprobación de prenomina</td><td>" + aprobacionPrenomina2_ + "</td></tr>";
+					contenidoTablas_ = contenidoTablas_ + contenidoMes_ + '</table>';
+				}
+			}
+			catch (e)
+			{
+				info e;
+			}
+		}
+	}
+	if(centros.Periocidad_de_Pago == "MENSUAL")
+	{
+		unicoPago_ = centros.Dias_de_Pago.toNumber();
+		try 
+		{
+			for each index mes in mesesText_
+			{
+				contenidoMes_ = '<h2>' + mesesText_.get(mes) + '</h2>' +'<h4>' +centros.Centro_de_Costo + '</h4>' +'<table class ="content-table"><tr><th>Nombre</th><th>Fecha</th></tr>';
+				mesx = mes + 1;
+				if(mesx < 10)
+				{
+					mesTxt_ = "0" + mesx;
+				}
+				else
+				{
+					mesTxt_ = mesx + "";
+				}
+				primerPago_ = mesTxt_ + "," + unicoPago_.toNumber() + "," + zoho.currenttime.getYear();
+				fechaBase1_ = toDate(primerPago_,"MM,d,yyyy");
+				envioPlanilla1_ = fechaBase1_.subDay(lib.Fechas.addworksdaysV1(fechaBase1_,-5,false));
+				recepcionNovedades1_ = fechaBase1_.subDay(lib.Fechas.addworksdaysV1(fechaBase1_,-4,false));
+				envioPrenomina1_ = fechaBase1_.subDay(lib.Fechas.addworksdaysV1(fechaBase1_,-3,false));
+				aprobacionPrenomina1_ = fechaBase1_.subDay(lib.Fechas.addworksdaysV1(fechaBase1_,-2,false));
+				contenidoMes_ = contenidoMes_ + "<tr><td>Envío de planilla</td><td>" + envioPlanilla1_ + "</td></tr><tr><td>Recepción de novedades</td><td>" + recepcionNovedades1_ + "</td></tr><tr><td>Envío de prenomina</td><td>" + envioPrenomina1_ + "</td></tr><tr><td>Aprobación de prenomina</td><td>" + aprobacionPrenomina1_ + "</td></tr>";
+				contenidoTablas_ = contenidoTablas_ + contenidoMes_ + '</table>';
+			}
+		}
+		catch (e)
+		{
+			info e;
+		}
+}
+//Construyo por mes la tabla
+//Actulizo calendario en reporte
+input.Calendario1 = '<body> <style> *{ font-family: sans-serif;} .content-table { border-collapse: collapse; margin: 25px 0; font-size: 0.9em; min-width: 400px; border-radius: 5px 5px 0 0; overflow: hidden; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); } .content-table thead tr { background-color: #C2000B; color: #ffffff; text-align: left; font-weight: bold; } .content-table th, .content-table td { padding: 12px 15px; } .content-table tbody tr { border-bottom: 1px solid #dddddd; } .content-table tbody tr:nth-of-type(even) { background-color: #f3f3f3; } .content-table tbody tr:last-of-type { border-bottom: 2px solid #FE330A; } .content-table tbody tr.active-row { font-weight: bold; color: #990000; } </style>' + contenidoTablas_ + '</body>';
