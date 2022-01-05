@@ -19,67 +19,76 @@
         <div class="tabla" >
             <table border="1" cellspacing="0" style="margin-left:auto; margin-right: auto;" width="85%" >
                 <tr>
-                    <td width=50% >Nombre de trabajador</td>
-                    <td>nombre</td>
+                    <td width=50% >Nombre del trabajador</td>
+                    <td>'+'var_nombre'+'</td>
                 </tr>
                 <tr>
                     <td>Tipo de documento</td>
-                    <td>Cedula de ciudadania</td>
+                    <td>'+'var_tipoDoc'+'</td>
                 </tr>
                 <tr>
                     <td>No Identificación</td>
-                    <td>1018510059</td>
+                    <td>'+'var_documento'+'</td>
                 </tr>
                 <tr>
                     <td>Nacionalidad</td>
-                    <td>Colombiana</td>
+                    <td>'+'var_nacionalidad'+'</td>
                 </tr>
                 <tr>
-                    <td>Dirección residencial</td>
-                    <td>Miguel Alejandro Gómez Alarcón</td>
+                    <td>Dirección residencia</td>
+                    <td>'+'var_dierccion'+'</td>
                 </tr>
                 <tr>
                     <td>Telefono, celular, Correo</td>
-                    <td>3108163741</td>
+                    <td>'+'var_telefono'+'</td>
                 </tr>
                 <tr>
-                    <td>Horario en que se prestara el servicio</td>
-                    <td>Jornada laboral maxima</td>
+                    <td>Cargo a desempeñar</td>
+                    <td>'+'var_cargo'+'</td>
+                </tr>
+                <tr>
+                    <td>Empresa usuaria</td>
+                    <td>'+'empresaUsuaria'+'</td>
+                </tr>
+                <tr>
+                    <td>Lugar en que se prestará el servicio (Empresa usuaria)</td>
+                    <td>'+'var_lugarEmpresaUsuaria'+'</td>
+                </tr>
+                <tr>
+                    <td>Horario en que se prestará el servicio trabajador vinculado por días</td>
+                    <td>'+'var_horario'+'</td>
                 </tr>
                 <tr>
                     <td>Lugar, hora y persona con la que debe presentarse</td>
-                    <td>Miguel Gómez</td>
+                    <td>'+'var_lugarHoraPersonaAPresentarse'+'</td>
                 </tr>
                 <tr>
                     <td>Salario asignado</td>
-                    <td>1000000</td>
+                    <td>'+'var_salario'+'</td>
                 </tr>
                 <tr>
-                    <td>Auxilio de transporte</td>
-                    <td>106454</td>
+                    <td>Auxilio de transporte proporcional a los días laborados</td>
+                    <td>'+'var_auxilioTransporte'+'</td>
                 </tr>
                 <tr>
                     <td>Beneficio salarial mensual</td>
-                    <td>200000</td>
+                    <td>'+'var_beneficioSalarial'+'</td>
                 </tr>
                 <tr>
                     <td>Beneficio no salarial mensial</td>
-                    <td>0</td>
+                    <td>'+'var_beneficioNoSalarial'+'</td>
                 </tr>
                 <tr>
                     <td>Periodos de pago</td>
-                    <td>Quincenal</td>
+                    <td>'+'var_periodosPago'+'</td>
                 </tr>
                 <tr>
                     <td>Fecha de inicio de actividades</td>
-                    <td>23/12/2021</td>
+                    <td>'+'var_fechaInicio'+'</td>
                 </tr>
                 <tr>
-                   <td>Labora a desempeñar</td>
-                   <td>En la prestación de servicios de conformidad con el contrato de
-                    prestación de servicios suscrito entre la Usuaria y la EST el cual
-                    hace parte integral de este contrato.
-                    </td> 
+                   <td>Labor a desempeñar</td>
+                   <td>'+'var_labor'+'</td> 
                 </tr>
             </table> 
         </div>
@@ -117,7 +126,7 @@
             </div>    
             <p>Entre HQ5 S.A.S identificada con el NIT 901023218-6 , representada legalmente por GAITAN LEÓN DIEGO HAROLD ,
             mayor de edad, identificado con Cédula de Ciudadanía No. 79788452 , quien en adelante se denominará EL EMPLEADOR
-            y EL TRABAJADOR, quien se identifica como aparece en el cuadro superior y al pie de su correspondiente firma, se ha
+            y EL TRABAJADOR, quien se identifica como aparece en el cuadro superior y al pie de su correspondiente firma, se ha 
             celebrado el presente contrato de trabajo por el término de la obra o labor contratada. El presente contrato iniciará el día
             de suscripción de este documento, en la ciudad de Bogotá y se regirá por las siguientes cláusulas:
             PRIMERA. PERIODO DE PRUEBA: Se entiende que el tiempo inicial de este contrato es de prueba, es decir los dos
@@ -195,8 +204,8 @@
             incidentes, accidentes de trabajo y enfermedades laborales; k. participar y contribuir al cumplimiento de los objetivos del
             Sistema de Gestion de la Seguridad y Salud en el trabajo (SG-SST). DÉCIMA. PROHIBICIONES: queda prohibido de manera
             particular al trabajador en misión que, en la ejecución la labor contratada realice acciones en prejuicio de la empresa
-            USUARIA y en contra de ${Contratos.TEMPORAL}, de forma especiales las contenidas en el artículo 60 del Código
-            Sustantivo del Trabajo sumadas a las establecidas por el Reglamento Interno de Trabajo de ${Contratos.TEMPORAL}.
+            USUARIA y en contra de '+'var_temporal'+', de forma especiales las contenidas en el artículo 60 del Código
+            Sustantivo del Trabajo sumadas a las establecidas por el Reglamento Interno de Trabajo de '+'var_temporal'+'.
             DÉCIMA PRIMERA TRABAJO SUPLEMENTARIO: Queda establecido que en el salario enunciado en la cláusula quinta de
             este contrato se halla incluida la remuneración correspondiente a</p>
             
@@ -338,8 +347,8 @@
                 <tr><td width=50%>
             <h5>TRABAJADOR:</h5>
             <h3><u>{{SIGNATURE*}}</u> </h3>
-            <p style="font-size:0.8rem">NOMBRE COMPLETO
-                <br><b>CÉDULA DE CUIDADANÍA:</b>10465484984964
+            <p style="font-size:0.8rem">'+'var_nombre'+'
+                <br><b>CÉDULA DE CUIDADANÍA:</b>'+'var_documento'+'
             </p>
             </td>
             
@@ -362,7 +371,7 @@
                 <img src = "https://gestionhq5.com.co/recursos/hq5_logo.png"width="320"height="150" >
             </div>
                 <h4 style="text-align: center;">ACUERDO DE CONFIDENCIALIDAD</h4>   
-            <p>Yo ÓSCAR EFRÉN TORRES GUTIERREZ, mayor de edad, identificado(a) con la cédula de ciudadanía No. 1003671076 ,
+            <p>Yo +'var_nombre'+, mayor de edad, identificado(a) con la cédula de ciudadanía No. +'var_documento'+ ,
             por medio del presente documento, de manera libre, voluntaria e irrevocable me permito realizar las siguientes
             declaraciones: </p>    
             <p>1. COMPROMISO. En mi calidad de TRABAJADOR en misión de HQ5 SAS para la empresa usuaria FONDO DE
@@ -471,8 +480,8 @@
                 la terminación de este contrato, por una duración de diez (10) años.
             </p>    
         
-        <p>En constancia y prueba de aceptación se firma el presente contrato en dos ejemplares de un mismo tenor a los 4 días
-            del mes de 10 del año 2021
+        <p>En constancia y prueba de aceptación se firma el presente contrato en dos ejemplares de un mismo tenor a los '+'var_diaFirma'+' 
+            días del mes '+'var_mesFirma'+' del año '+'var_añoFirma'+'
             </p>
             <h5>TRABAJADOR:</h5>
             <table>
@@ -494,19 +503,19 @@
            
                 <tr>
                     <td>Nombre:</td>
-                    <td>MIGUEL ALEJANDRO GOMEZ ALARCON</td>
+                    <td>'+'var_nombre'+'</td>
                 </tr>
                 <tr>
                     <td>Doc:</td>
-                    <td>10185415848454</td>
+                    <td>'+'var_documento'+'</td>
                 </tr>
                 <tr>
                     <td>Dirección:</td>
-                    <td>FDSTDG DG GRDGDRG</td>
+                    <td>'+'var_dierccion'+'</td>
                 </tr>
                 <tr>
                     <td>Telefono:</td>
-                    <td>301548793</td>
+                    <td>'+'var_telefono'+'</td>
                 </tr>
            </table> 
            
@@ -525,14 +534,14 @@
             <p>Apreciados Señores:<br/></p>
             <p>FONDO DE DESARROLLO RURAL SUMAPAZ<br/></p>
             <p>Reciban un cordial saludo de parte de HQ5 SAS Identificada con Nit No 901023218-6, por medio de la
-                presente nos permitimos presentar al (la) señor (a) ÓSCAR EFRÉN TORRES GUTIERREZ identificado (a) con TIPO
-                DOCUMENTO CEDULA DE CIUDADANIA No.1003671076, que se presenta para el cargo de TECNICO</p>
+                presente nos permitimos presentar al (la) señor (a) '+'var_nombre'+' identificado (a) con TIPO
+                DOCUMENTO '+'var_tipoDoc'+' No.'+'var_documento'+', que se presenta para el cargo de '+'var_cargo'+'</p>
                 <p>Nota: Se entrega copia de contrato, certificación ARL, y carta de presentación, carnet de ARL.</p>
                 <br/><br/>
-            <p>EPS: FAMISANAR</p>
-            <p>FONDO DE PENSIONES: PORVENIR</p>
-            <p>CAJA DE COMPENSACION: COLSUBSIDIO</p>
-            <p>ARL: AXA COLPATRIA</p>
+            <p>EPS: '+'var_EPS'+'</p>
+            <p>FONDO DE PENSIONES: '+'var_fondoPensiones'+'</p>
+            <p>CAJA DE COMPENSACION: '+'var_cajaCompensacion'+'</p>
+            <p>ARL: '+'var_ARL'+'</p>
             <br/><br/><br/>
             <p>Cordialmente,<br/><br/></p>
             <img src = "https://gestionhq5.com.co/recursos/firmaDiego.png"width="200"height="100" >
