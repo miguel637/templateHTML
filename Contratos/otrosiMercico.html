@@ -6,29 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="otro si al contrato de trabajo suscrito entre temporal y trabajador">
-        <div style="text-align: right;margin:0;">
-            <img src = "https://gestionhq5.com.co/recursos/'+var_logoTemporal+'_logo.png"width="320"height="150" >
-        </div>  
-        
-        <h4 style="text-align: center;">OTROSÍ AL CONTRATO DE TRABAJO SUSCRITO ENTRE '+var_temporal+' Y '+var_nombre+'</h4>
-        <br/>
-        <p>Las partes de la referencia voluntariamente y de común acuerdo, suscriben el presente OTROSÍ, que aclara y modifica el contrato existente entre las partes.</p>
-        <p>CLÁUSULA PRIMERA: LUGAR DE TRABAJO. Las partes acuerdan que a partir del día ${Contratos.DIA FIRMA} de ${Contratos.MES DE FIRMA} del ${Contratos.AÑO DE FIRMA}, EL TRABAJADOR desempeñara sus funciones en cualquier de las planta de la Empresa Usuaria, ubicadas en el Municipio de Funza, Tenjo o en la Ciudad de Bogotá, de acuerdo a lo ordenado por la Empresa Usuaria.</p>
-        <p></p>
-        <table width=100% >
-            <tr>
-                <td width=50%>
-                    <h3><u>{{SIGNATURE*}}</u> </h3>
-                    <p style="font-size:0.8rem">'+var_nombre+'<br><br>'+var_tipoDoc+'</b><br>'+var_documento+'</p>
-                </td>
-        
-                <td style="padding: 5px 5px 5px 175px;">
-                    <img src = "https://gestionhq5.com.co/recursos/'+var_firmaRepresentanteTemporal+'.png"width="200"height="100" >
-                    <p style="font-size:0.8rem;margin-top: 0;  ">'+var_nombreTemporal+'<br>NIT.'+var_NITTemporal+'</p>
-                </td>
-            </tr>
-        </table> 
-    </div>
+    <div style="text-align:justify; margin: 30px 50px 0px 50px;">
+        <div class="otro si al contrato de trabajo suscrito entre temporal y trabajador">
+            <div style="text-align: right;margin:0;">
+                <img src = "https://gestionhq5.com.co/recursos/'+var_logoTemporal+'_logo.png"width="320"height="150" >
+            </div>  
+            
+            <h4 style="text-align: center;">OTROSÍ AL CONTRATO DE TRABAJO SUSCRITO ENTRE '+var_temporal+' Y '+var_nombre+'</h4>
+            <br/>
+            <p>Las partes de la referencia voluntariamente y de común acuerdo, suscriben el presente OTROSÍ, que aclara y modifica el contrato existente entre las partes.</p>
+            <p>CLÁUSULA PRIMERA: LUGAR DE TRABAJO. Las partes acuerdan que a partir del día '+var_diaFirma+' de '+var_mesFirma+' del '+var_anioFirma+', EL TRABAJADOR desempeñara sus funciones en cualquier de las planta de la Empresa Usuaria, ubicadas en el Municipio de Funza, Tenjo o en la Ciudad de Bogotá, de acuerdo a lo ordenado por la Empresa Usuaria.</p>
+            <p>PARÁGRAFO PRIMERO: En todo caso, EL EMPLEADOR podrá disponer que el trabajo se presente en lugar distinto de los inicialmente contratados y del presente otrosí, de igual manera EL TRABAJADOR acepta los cambios que respecto al lugar del trabajo decida el empleador dentro de su poder subordinante, todo ello sin afectar los derechos mínimos del trabajador.</p>
+            <p>CLÁUSULA SEGUNDA: Se declara, reconoce y acepta por parte del Empleador y El Trabajador que las modificaciones realizadas NO desmejoran las condiciones laborales del Trabajador.</p>
+            <p>El presente otrosí deja sin efecto toda cláusula, orden, acuerdo y en general toda disposición que con anterioridad las partes hayan suscrito o acordado que le sea contraria.</p>
+            <p>Para constancia se firma en Bogotá D.C., a los '+var_diaFirma+' día del mes de '+var_mesFirma+' del '+var_anioFirma+'</p>
+            <table width=100% >
+                <tr>
+                    <td width=50%>
+                        <h3><u>{{SIGNATURE*}}</u> </h3>
+                        <p style="font-size:0.8rem">'+var_nombre+'<br><br>'+var_tipoDoc+'</b><br>'+var_documento+'</p>
+                    </td>
+            
+                    <td style="padding: 5px 5px 5px 175px;">
+                        <img src = "https://gestionhq5.com.co/recursos/'+var_firmaRepresentanteTemporal+'.png"width="200"height="100" >
+                        <p style="font-size:0.8rem;margin-top: 0;  ">'+var_nombreTemporal+'<br>NIT.'+var_NITTemporal+'</p>
+                    </td>
+                </tr>
+            </table> 
+        </div>
+    </div> 
 </body>
 </html>
