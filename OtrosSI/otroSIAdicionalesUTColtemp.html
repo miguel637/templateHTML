@@ -10,8 +10,9 @@
     
         <div style="text-align:justify; margin: 30px 50px 0px 50px;">
             
+            <br>
             <div class="ACEPTACION_Y_CONOCIMIENTO_DE_GRABACIÓN_DE_LLAMADAS_O_REUNIONES_VIRTUALES">
-                <table width="90%">
+                <table width="90%" style="margin-left:auto; margin-right: auto;" >
                     <tr>
                         <td>
                             <img src = "https://gestionhq5.com.co/recursos/fiduprevisora_logo.png"width="190"height="50" >
@@ -29,30 +30,34 @@
                     <br><br>___ APRENNDIZ SENA
                 </p>
                 <p>
-                    Yo ${Contratos.NOMBRE DEL TRABAJADOR}, mayor de edad, identificado con ${Contratos.TIPO DE DOCUMENTO} No. ${Contratos.No IDENTIFICACION} expedida en ${Contratos.LUGAR DE EXPEDICIÓN}, en mi condición de trabajador/practicante/aprendiz adscrito a la dependencia ya indicada, AUTORIZO de manera libre, expresa e irrevocable a FIDUPREVISORA S.A para grabar y monitorear mis comunicaciones telefónicas e información entrante y saliente de las dependencias de la entidad. Lo anterior, con el fin exclusivo de dar cumplimiento a la normatividad que regula el sector financiero en la materia. 
+                    Yo '+var_nombre+', mayor de edad, identificado con '+var_tipoDoc+' No. '+var_documento+' expedida en '+var_LugarExpedicionDoc+', en mi condición de trabajador/practicante/aprendiz adscrito a la dependencia ya indicada, AUTORIZO de manera libre, expresa e irrevocable a FIDUPREVISORA S.A para grabar y monitorear mis comunicaciones telefónicas e información entrante y saliente de las dependencias de la entidad. Lo anterior, con el fin exclusivo de dar cumplimiento a la normatividad que regula el sector financiero en la materia. 
                 </p>
                 <p>
                     Como constancia de haber leído, entendido y aceptado lo anterior, firmo el presente documento:
                 </p>
                 <p style="text-align: left;">
-                    <br>Nombre: ${Contratos.NOMBRE DEL TRABAJADOR}
-                    <br>Identificación: ${Contratos.No IDENTIFICACION}
-                    <br>Cargo: ${Contratos.CARGO A DESEMPEÑAR}
+                    <br>Nombre: '+var_nombre+'
+                    <br>Identificación: '+var_documento+'
+                    <br>Cargo: '+var_cargo+'
                     <br>Dependencia: ________________________________
-                    <br>Fecha:     ${Contratos.DIA FIRMA}/${Contratos.MES DE FIRMA}/${Contratos.AÑO DE FIRMA}
+                    <br>Fecha:     '+var_diaFirma+'/'+var_mesFirma+'/'+var_anioFirma+'
                 </p>
                 <p>
                     Firma: {{SIGNATURE*}}
                 </p>
-            </div>
-            <div class="AUTORIZACIÓN_PARA_CONSULTA_Y_REPORTE_A_CENTRALES_DE_RIESGO">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <table width=85% style="text-align: center">
                     <tr>
                         <td>VERSIÓN 5</td>
                         <td>FR-GTH-01-036</td>
                     </tr>
                 </table>
-                <table width="90%">
+            </div>
+
+            <div class="AUTORIZACIÓN_PARA_CONSULTA_Y_REPORTE_A_CENTRALES_DE_RIESGO" style="margin-top: 50px;">
+                
+                <br><br>
+                <table width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
                             <img src = "https://gestionhq5.com.co/recursos/fiduprevisora_logo.png"width="190"height="50" >
@@ -63,7 +68,7 @@
                     </tr>
                 </table>
                 <br>
-                <p>
+                <p style="text-align: left;">
                     <br>Señores
                     <br><b>FIDUPREVISORA S.A.</b>
                     <br>Gerencia de Talento Humano
@@ -79,25 +84,26 @@
                     Como constancia de haber leído, entendido y aceptado lo anterior, firmo el presente documento:
                 </p>
                 <br>
-                <p>
-                    Nombre: ${Contratos.NOMBRE DEL TRABAJADOR}
-                    Identificación: ${Contratos.No IDENTIFICACION}
-                    Cargo: ${Contratos.CARGO A DESEMPEÑAR}
-                    Fecha:     ${Contratos.DIA FIRMA}/${Contratos.MES DE FIRMA}/${Contratos.AÑO DE FIRMA}
+                <p style="text-align: left;">
+                    Nombre: '+var_nombre+'
+                    Identificación: '+var_documento+'
+                    Cargo: '+var_cargo+'
+                    Fecha:     '+var_diaFirma+'/'+var_mesFirma+'/'+var_anioFirma+'
                 </p>
                 <p>
                     Firma: {{SIGNATURE*}}
                 </p>
-
-            </div>
-            <div class="AUTORIZACIÓN_DE_TRATAMIENTO_DE_DATOS_PERSONALES_PARA_FUNCIONARIOS_DE _IDUPREVISORA_S.A">
-                <table width=85% style="text-align;: center">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <table width=85% style="text-align: center">
                     <tr>
-                        <td>VERSIÓN 5</td>
-                        <td>FR-GTH-01-036</td>
+                        <td>VERSIÓN 1</td>
+                        <td>FR-GTH-01-037</td>
                     </tr>
                 </table>
-                <table width="90%">
+            </div>
+            <br><br>
+            <div class="AUTORIZACIÓN_DE_TRATAMIENTO_DE_DATOS_PERSONALES_PARA_FUNCIONARIOS_DE _IDUPREVISORA_S.A" style="margin-top: 50px;">
+                <table width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
                             <img src = "https://gestionhq5.com.co/recursos/fiduprevisora_logo.png"width="190"height="50" >
@@ -111,7 +117,7 @@
                 <p>
                     Fiduprevisora S.A., sociedad de economía mixta del sector descentralizado del orden nacional, identificada con el NIT 860525148-5, con domicilio principal en la Calle 72 # 10-03 de Bogotá, Colombia, en adelante FIDUPREVISORA S.A., en cumplimiento de la Ley 1581 de 2012, sus decretos y demás normas reglamentarias y complementarias,  por las cuales se establecen disposiciones generales del hábeas data y se regula el manejo de la información contenida en bases de datos, es responsable del tratamiento de sus datos personales originado por un contrato laboral, con las siguientes finalidades, para efectos de dar cumplimiento a las disposiciones contenidas en la Ley 1581 de 2012: 
                 </p>
-                <p>
+                <p style="text-align: left;">
                     1.	Información personal necesaria para la selección, contratación, inducción, bienestar, capacitación, evaluación, liquidación de nómina, seguridad social y retiro en virtud del contrato laboral, para la gestión del recurso humano.
                     <br>2.	Conocer la información de los candidatos y empleados que repose en centrales de información crediticia en centrales de riesgo como mejor práctica por ser entidad vigilada por la Superintendencia Financiera de Colombia. 
                     <br>3.	Registrar o actualizar información relacionada con novedades, logros, certificaciones académicas, técnicas, tecnológicas o profesionales que en general permitan un análisis veraz de las aptitudes, destrezas y cualidades.
@@ -124,6 +130,7 @@
                     <br>10.	La información sobre los datos recolectados del carné directamente en los puntos de seguridad, los cuales se utilizarán para fines de control de acceso y horario, los cuales podrán ser utilizados como prueba en cualquier tipo de proceso, de conformidad con las disposiciones legales vigentes.
                     <br>11.	La información sobre los datos recolectados directamente en los puestos de trabajo obtenidos en las grabaciones telefónicas que se utilizan con fines de cumplimiento normativo y podrán ser utilizados como prueba en cualquier tipo de proceso, de conformidad con las disposiciones legales vigentes.
                     <br>12.	La información sobre los datos del empleado y su familia (incluidos los hijos) necesarios para la prestación de servicios y/o actividades, diferentes a las funciones propias de su cargo, como las actividades lúdicas o recreativas promovidas por la Fiduciaria o por los fideicomisos administrados por ella.
+                    <br><br><br>
                     <br>13.	Los registros fotográficos, videos y material relacionado que serán utilizados para publicaciones internas y externas en revistas, boletines, comunicados, carteleras, página web e intranet, redes sociales y sinfines en el desarrollo de las actividades culturales y laborales de la entidad o los patrimonios autónomos administrados por la Fiduciaria.
                     <br>14.	Los registros derivados de sistemas de denuncias que ponen de manifiesto la existencia de conductas contrarias a la Ley o a las normas internas de comportamiento de la Fiduciaria o los patrimonios autónomos, llevadas a cabo por empleados o auditores de esas entidades o fideicomisos.
                     <br>15.	La información del empleado será usada para la contratación de seguros de vida y plan de beneficios.
@@ -141,6 +148,7 @@
                 <p>
                     Con ocasión a su participación en la presente convocatoria laboral, así como una eventual participación en las convocatorias internas que sean informadas por la Gerencia de Talento Humano, y en caso de ser seleccionado para el cargo correspondiente, se recolectará, almacenará, usará, dispondrá o eventualmente se podrá llegar a transmitir o transferir a nivel nacional o internacional, información personal de su titularidad o de terceros vinculados, referidos o relacionados. La información personal objeto de tratamiento es de tipo general, identificación, ubicación, socioeconómica, antecedentes personales, comerciales, judiciales y disciplinarios, así como otra información que podría llegar a ser considerada sensible tales como datos biométricos, información médica, entorno familiar y personal entre otros. La anterior información será utilizada con las siguientes finalidades:
                 </p>
+                <br><br>
                 <p>
                     <ul>
                         <li>
@@ -169,43 +177,33 @@
                 <p>
                     Por lo anterior, SI __ NO __  autorizo de manera voluntaria, previa, explícita, informada e inequívoca a Fiduprevisora para que los datos obtenidos sean utilizados para las finalidades anteriormente indicadas.  
                 </p>
-                <h4>DATOS SENSIBLES</h4>
+                <h4 style="display:block; ">DATOS SENSIBLES</h4>
                 <p>
                     Manifiesto que me informaron que, en caso de recolección de mi información sensible, tengo derecho a contestar o no las preguntas que me formulen y a entregar o no los datos solicitados.
-                </p>
-                <p>
-                    Entiendo que son datos sensibles aquellos que afectan la intimidad del Titular o cuyo uso indebido puede generar discriminación. 
-                </p>
-                <p>
-                    De igual forma, autorizo de manera voluntaria, previa, explícita, informada e inequívoca el tratamiento de mis datos que son de naturaleza sensible y por ende requiere mi autorización, para las siguientes finalidades:
-                </p>
-                <p>
-                    1.	Los datos personales biométricos (huella digital) registrado en dispositivos y sistemas biométricos, los cuales se utilizarán para fines de seguridad, control de acceso y horario, y podrán ser utilizados como prueba en cualquier tipo de proceso, de conformidad con las disposiciones legales vigentes.
-                </p>
-                <p>
-                    SI __ NO __ 
-                </p>
-                <p>
-                    Si el empleado firma que No da su consentimiento al tratamiento de los datos personales, contemplados en los numerales anteriores, la empresa no podrá hacer uso de esta información a excepción de los que son regulados por la Ley.
+                    <br>Entiendo que son datos sensibles aquellos que afectan la intimidad del Titular o cuyo uso indebido puede generar discriminación. 
+                    <br>De igual forma, autorizo de manera voluntaria, previa, explícita, informada e inequívoca el tratamiento de mis datos que son de naturaleza sensible y por ende requiere mi autorización, para las siguientes finalidades:
+                    <br>1.	Los datos personales biométricos (huella digital) registrado en dispositivos y sistemas biométricos, los cuales se utilizarán para fines de seguridad, control de acceso y horario, y podrán ser utilizados como prueba en cualquier tipo de proceso, de conformidad con las disposiciones legales vigentes. SI __ NO __ 
+                    <br>Si el empleado firma que No da su consentimiento al tratamiento de los datos personales, contemplados en los numerales anteriores, la empresa no podrá hacer uso de esta información a excepción de los que son regulados por la Ley.
                 </p>
                 <p style="text-align: left;">
-                    Nombre: ${Contratos.NOMBRE DEL TRABAJADOR}
-                    Identificación: ${Contratos.No IDENTIFICACION}
-                    Cargo: ${Contratos.CARGO A DESEMPEÑAR}
-                    Fecha:     ${Contratos.DIA FIRMA}/${Contratos.MES DE FIRMA}/${Contratos.AÑO DE FIRMA}
+                    Nombre: '+var_nombre+'
+                    Identificación: '+var_documento+'
+                    Cargo: '+var_cargo+'
+                    Fecha:     '+var_diaFirma+'/'+var_mesFirma+'/'+var_anioFirma+'
                 </p>
                 <p>
                     Firma: {{SIGNATURE*}}
                 </p>
-            </div>
-            <div class="AUTORIZACIÓN_DE_TRATAMIENTO_DE_DATOS_PERSONALES_PARA_BENEFICIARIOS_MAYORES_DE_EDAD_DE_FUNCIONARIOS_DE_FIDUPREVISORA_S.A">
                 <table width=85% style="text-align: center">
                     <tr>
-                        <td>VERSIÓN 5</td>
-                        <td>FR-GTH-01-036</td>
+                        <td>VERSIÓN 1</td>
+                        <td>FR-GTH-01-037</td>
                     </tr>
                 </table>
-                <table width="90%">
+            </div>
+            <div class="AUTORIZACIÓN_DE_TRATAMIENTO_DE_DATOS_PERSONALES_PARA_BENEFICIARIOS_MAYORES_DE_EDAD_DE_FUNCIONARIOS_DE_FIDUPREVISORA_S.A" style="margin-top: 50px;">
+                
+                <table width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
                             <img src = "https://gestionhq5.com.co/recursos/fiduprevisora_logo.png"width="190"height="50" >
@@ -218,53 +216,34 @@
                 <p>
                     Fiduprevisora S.A., sociedad de economía mixta del sector descentralizado del orden nacional, identificada con el NIT 860525148-5, con domicilio principal en la Calle 72 # 10-03 de Bogotá, Colombia, en adelante FIDUPREVISORA S.A., en cumplimiento de la Ley 1581 de 2012, sus decretos y demás normas reglamentarias y complementarias,  por las cuales se establecen disposiciones generales del hábeas data y se regula el manejo de la información contenida en bases de datos, es responsable del tratamiento de sus datos personales como beneficiario de un empleado de Fiduprevisora, con las siguientes finalidades, para efectos de dar cumplimiento a las disposiciones contenidas en la Ley 1581 de 2012: 
                 </p>
-                <p>
+                <p style="text-align: left; ">
                     1. Atender adecuadamente los trámites pertinentes ante el Sistema General de Seguridad Social y Caja de Compensación, compañía de seguros, pólizas de salud y vida, compañías que presten servicios educativos, financieros, lúdicos y/o recreativos a los cuales pueda acceder como beneficiario del empleado de la entidad.
-                </p>
-                <p>
-                    2. Los registros fotográficos, videos y material relacionado que serán utilizados para publicaciones internas y externas en revistas, boletines, comunicados, carteleras, página web e intranet y redes sociales en el desarrollo de las actividades culturales de la Fiduciaria.
-                </p>
-                <p>
-                    3. La información recolectada de video vigilancia, cuando el beneficiario visite la Fiduciaria se utilizará para fines de seguridad de las personas, los bienes e instalaciones. Esta información podrá ser empleada como prueba en cualquier tipo de proceso, previa solicitud de autoridad competente                   
-                </p>
-                <p>
-                    4. Compartir o circularizar información y documentación con entidades del Grupo Bicentenario, terceros, aliados o proveedores para gestionar y desarrollar los procesos y programas en calidad de beneficiario del empleado de la entidad.
-                </p>
-                <p>
-                    5. Atender, gestionar y resolver las peticiones, quejas y reclamos.
-                </p>
-                <p>
-                    6. En general, para gestionar y desarrollar los procesos relacionados con los beneficios ofrecidos y adquiridos por los beneficiarios de los empleados y exempleados, ya sea directamente o a través de terceros a nivel nacional o internacional, en servidores propios o ubicados en la nube.
-                </p>
-                <p>
-                    7. Desarrollar las actividades de planificación, ejecución, verificación, análisis, control y auditoría interna o externa conforme a los requerimientos de las disposiciones normativas aplicables, así como los lineamientos y procedimientos del Sistema Integrado de Gestión y Sistema de Control Interno.   
+                    <br>2. Los registros fotográficos, videos y material relacionado que serán utilizados para publicaciones internas y externas en revistas, boletines, comunicados, carteleras, página web e intranet y redes sociales en el desarrollo de las actividades culturales de la Fiduciaria.
+                    <br>3. La información recolectada de video vigilancia, cuando el beneficiario visite la Fiduciaria se utilizará para fines de seguridad de las personas, los bienes e instalaciones. Esta información podrá ser empleada como prueba en cualquier tipo de proceso, previa solicitud de autoridad competente                   
+                    <br>4. Compartir o circularizar información y documentación con entidades del Grupo Bicentenario, terceros, aliados o proveedores para gestionar y desarrollar los procesos y programas en calidad de beneficiario del empleado de la entidad.
+                    <br>5. Atender, gestionar y resolver las peticiones, quejas y reclamos.
+                    <br>6. En general, para gestionar y desarrollar los procesos relacionados con los beneficios ofrecidos y adquiridos por los beneficiarios de los empleados y exempleados, ya sea directamente o a través de terceros a nivel nacional o internacional, en servidores propios o ubicados en la nube.
+                    <br>7. Desarrollar las actividades de planificación, ejecución, verificación, análisis, control y auditoría interna o externa conforme a los requerimientos de las disposiciones normativas aplicables, así como los lineamientos y procedimientos del Sistema Integrado de Gestión y Sistema de Control Interno.   
                 </p>
                 <p>
                     En razón de lo anterior, los titulares de la información registrada, cuentan con el derecho a conocer, actualizar, rectificar y solicitar la supresión de sus datos personales; abstenerse de suministrar información personal de naturaleza sensible; solicitar la prueba de la autorización otorgada; ser informados sobre el uso que se da a sus datos personales; revocar la autorización otorgada, consultar de forma gratuita los datos personales previamente suministrados y acudir ante la Superintendencia de Industria y Comercio cuando no se atienda en debida forma sus consultas o reclamos en materia de protección de datos personales. Los anteriores derechos podrán ser ejercidos presentando una consulta o reclamo a través de los siguientes canales de atención: formulario de PQR, dispuesto en la página WEB de la Entidad www.fiduprevisora.com.co, teléfono: (1) 7 56 24 44, dirección física: calle 72 # 10-03, Bogotá, Colombia.  
                 </p>
                 <p>
                     Declaro conocer y aceptar de manera expresa y por escrito, el contenido de la presente solicitud de autorización, así como el contenido de la política de protección de datos personales de Fiduprevisora S.A.
+                    <br>La política de tratamiento de datos personales y el aviso de privacidad los puede consultar en la página web de la entidad.   
+                    <br>Por lo anterior, SI ____ NO ___ autorizo de manera voluntaria, previa, explícita, informada e inequívoca a Fiduprevisora para que los datos obtenidos sean utilizados para las finalidades anteriormente indicadas.   
                 </p>
-                <p>
-                    La política de tratamiento de datos personales y el aviso de privacidad los puede consultar en la página web de la entidad.   
+                <p style="text-align: left;">Firma: {{SIGNATURE*}}
+                <br>Nombre: '+var_nombre+'
+                <br>Identificación: '+var_documento+'
+                <br>Fecha:     '+var_diaFirma+'/'+var_mesFirma+'/'+var_anioFirma+'
                 </p>
-                <p style="text-align: left;">
-                    Por lo anterior, SI ____ NO ___ autorizo de manera voluntaria, previa, explícita, informada e inequívoca a Fiduprevisora para que los datos obtenidos sean utilizados para las finalidades anteriormente indicadas.   
-                </p>
-                Firma: {{SIGNATURE*}}
-                <br>
-                <br>Nombre: ${Contratos.NOMBRE DEL TRABAJADOR}
-                <br>Identificación: ${Contratos.No IDENTIFICACION}
-                <br>Fecha:     ${Contratos.DIA FIRMA}/${Contratos.MES DE FIRMA}/${Contratos.AÑO DE FIRMA}
             </div>
-            <div class="ACUERDO_DE_CONFIDENCIALIDAD_PARA_FUNCIONARIOS_DE_FIDUPREVISORA_S.A.">
-                <table width=85% style="text-align: center">
-                    <tr>
-                        <td>VERSIÓN 5</td>
-                        <td>FR-GTH-01-036</td>
-                    </tr>
-                </table>
-                <table width="90%">
+            <br>
+            <div class="ACUERDO_DE_CONFIDENCIALIDAD_PARA_FUNCIONARIOS_DE_FIDUPREVISORA_S.A." >
+                
+                <br>
+                <table width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
                             <img src = "https://gestionhq5.com.co/recursos/fiduprevisora_logo.png"width="190"height="50" >
@@ -278,39 +257,44 @@
                     CONSIDERACIONES
                 </b></p>
                 <p>
-                    La Fiduciaria la Previsora S.A. de una parte, quien en adelante se llamará LA FIDUCIARIA y de la otra parte ${Contratos.NOMBRE DEL TRABAJADOR}, identificado(a) con ${Contratos.TIPO DE DOCUMENTO} No.${Contratos.No IDENTIFICACION} de ${Contratos.LUGAR DE EXPEDICIÓN}, que de ahora en adelante se llamará USUARIO.-TRABAJADOR, hemos determinado por el presente documento adoptar el ACUERDO DE CONFIDENCIALIDAD Y RESPONSABILIDAD POR EL USO DE LOS SISTEMAS INFORMÁTICOS DE LA ENTIDAD, que se regirá por los siguientes artículos:
+                    La Fiduciaria la Previsora S.A. de una parte, quien en adelante se llamará LA FIDUCIARIA y de la otra parte '+var_nombre+', identificado(a) con '+var_tipoDoc+' No.'+var_documento+' de '+var_LugarExpedicionDoc+', que de ahora en adelante se llamará USUARIO.-TRABAJADOR, hemos determinado por el presente documento adoptar el ACUERDO DE CONFIDENCIALIDAD Y RESPONSABILIDAD POR EL USO DE LOS SISTEMAS INFORMÁTICOS DE LA ENTIDAD, que se regirá por los siguientes artículos:
                     <br>Primero. Que Fiduprevisora S.A., ha acordado usar los servicios del USUARIO-TRABAJADOR para soportar los procesos en los proyectos adelantados por ella. Segundo. Que, para poder realizar la labor descrita, las partes deben intercambiar información clasificada como reservada o confidencial, de acuerdo a los criterios establecidos por la entidad y facilitar herramientas que permitan acceder a la información de la Fiduprevisora S.A. Tercero. Que la divulgación de la información mencionada generaría grandes perjuicios económicos para la Fiduprevisora S.A. Cuarto. Que resultaría altamente inconveniente para las partes y para el acuerdo proyectado, que terceras personas conocieran de los asuntos que actualmente se debaten entre éstas. Quinto. Que se hace necesario, para garantizar el adecuado curso de los procedimientos y procesos, evitar que se produzca cualquier revelación de la información a que se ha hecho referencia. Sexto. Que de acuerdo con las consideraciones anteriores las partes de común acuerdo suscriben el presente Acuerdo de Confidencialidad, que se regirá por las siguientes: 
                 </p>
                 <p style="text-align: center;"><b>
                     CLAUSULAS
                 </b></p>
                 <p>
-                    PRIMERA: EL USUARIO-TRABAJADOR declara, y acepta el contenido del MANUAL DE POLÍTICAS DE SEGURIDAD DE LA INFORMACIÓN adoptado por la Fiduciaria. SEGUNDA: EL USUARIO-TRABAJADOR está consciente que la violación del acuerdo establecido conlleva responsabilidades civiles, penales, patrimoniales y disciplinarias, declarando bajo la gravedad de juramento que acepta este acuerdo y que se somete a él en tanto dure su vinculación con LA FIDUCIARIA y por un término de dos (2) años después de la culminación de la relación laboral, ya sea por motivo voluntario o por terminación del contrato. TERCERA:  El USUARIO-TRABAJADOR acepta haber recibido una o varias cuentas, (llámese cuentas uno o varios nombres de sesión con su respectivas claves que puede cambiar en cualquier momento) como un bien personal e intransferible, para acceder a los sistemas de Información de la Fiduprevisora, como son acceso a un computador personal, acceso a la red, acceso a los sistemas de Información sea en bases de datos, sistemas de archivo, archivos planos o cualquier otro mecanismo estructurado que contenga información de la empresa, el acceso al servicio de correo electrónico, y acceso a Internet. CUARTA: El USUARIO-TRABAJADOR acepta toda la responsabilidad por el uso que se haga de esta(s) cuenta(s) sobre la información a la que se tiene acceso, así mismo se compromete a utilizar contraseñas seguras y a no compartir esta cuenta con otras personas sean internas o externas a la empresa y en caso tal a asumir la responsabilidad sobre las actuaciones utilizando dichas cuentas. QUINTA: El USUARIO-TRABAJADOR se compromete a cambiar la clave de la cuenta asignada la primera vez que use los sistemas y luego con una periodicidad de un mes usando para ello la combinación de letras y número con una longitud mínima de seis (10) caracteres combinando letras, números y nunca usar nombres propios o palabras fáciles de determinar por personas allegadas al USUARIO-TRABAJADOR, laboral o personalmente, como nombres, apellidos, teléfonos, placas etc. SEXTA: EL USUARIO-TRABAJADOR se compromete a usar los recursos informáticos puestos a su disposición o asignados temporalmente solo a las funciones específicas establecidas por un superior bajo las normas y procedimientos de buen comportamiento y prohibiciones de uso indebido de los sistemas de información y de comunicación. SEPTIMA: El USUARIO-TRABAJADOR acepta que toda la información a la que se tenga acceso sea a través de los sistemas Informáticos, cuentas de correo electrónico, claves de computadores o cualquier mecanismo antes mencionado como de los generados por ellos, como listados o reportes son de propiedad exclusiva de la Fiduprevisora S.A., y por lo tanto no podrá ser divulgada o entregada a terceros bajo presiones o prebendas personales, pues será considerada como robo de bienes intangibles y castigada penalmente. OCTAVA: El USUARIO-TRABAJADOR, no obstante, podrá divulgar información clasificada como reservada o confidencial en cualquiera de las siguientes eventualidades: a) Si existe autorización escrita para difundir la información, por parte de su propietario. b) En caso de que autoridades legales así lo requieran. c) En caso que la información sea o se vuelva de público conocimiento, siempre y cuando la parte receptora de la información no haya participado en su circulación. d) Si la información es suministrada en debida forma a la contraparte por una tercera persona, sin limitación de confidencialidad. Esto puede tener lugar antes o después de la revelación de la información reservada o confidencial. e) Si la información la desarrollan las partes independientemente, sin infracción de este acuerdo. NOVENA: Una vez cese el término de vinculo entra las partes o exista una terminación anticipada, toda información transmitida en cualquier forma de registro, grabado, u otra forma tangible, así como todas las copias de la información, deberán ser entregadas por el USUARIO-TRABAJADOR a la Fiduprevisora S.A., o a quien éste designe para tal efecto devolviendo las cuentas creadas o utilizadas por el USUARIO-TRABAJADOR a la Vicepresidencia de Tecnología e Información por escrito. DECIMA: Las obligaciones de mantener confidencial y bajo uso restringido la información privilegiada y protegida por este acuerdo, subsistirán durante un período de dos (2) años, contados a partir de la fecha de terminación de los procesos en los que cursan las partes. DECIMA PRIMERA: El USUARIO-TRABAJADOR se compromete a colocar el siguiente texto en todos los correos que se envíen de la empresa hacia fuera:
+                    PRIMERA: EL USUARIO-TRABAJADOR declara, y acepta el contenido del MANUAL DE POLÍTICAS DE SEGURIDAD DE LA INFORMACIÓN adoptado por la Fiduciaria. SEGUNDA: EL USUARIO-TRABAJADOR está consciente que la violación del acuerdo establecido conlleva responsabilidades civiles, penales, patrimoniales y disciplinarias, declarando bajo la gravedad de juramento que acepta este acuerdo y que se somete a él en tanto dure su vinculación con LA FIDUCIARIA y por un término de dos (2) años después de la culminación de la relación laboral, ya sea por motivo voluntario o por terminación del contrato. TERCERA:  El USUARIO-TRABAJADOR acepta haber recibido una o varias cuentas, (llámese cuentas uno o varios nombres de sesión con su respectivas claves que puede cambiar en cualquier momento) como un bien personal e intransferible, para acceder a los sistemas de Información de la Fiduprevisora, como son acceso a un computador personal, acceso a la red, acceso a los sistemas de Información sea en bases de datos, sistemas de archivo, archivos planos o cualquier otro mecanismo estructurado que contenga información de la empresa, el acceso al servicio de correo electrónico, y acceso a Internet. CUARTA: El USUARIO-TRABAJADOR acepta toda la responsabilidad por el uso que se haga de esta(s) cuenta(s) sobre la información a la que se tiene acceso, así mismo se compromete a utilizar contraseñas seguras y a no compartir esta cuenta con otras personas sean internas o externas a la empresa y en caso tal a asumir la responsabilidad sobre las actuaciones utilizando dichas cuentas. QUINTA: El USUARIO-TRABAJADOR se compromete a cambiar la clave de la cuenta asignada la primera vez que use los sistemas y luego con una periodicidad de un mes usando para ello la combinación de letras y número con una longitud mínima de seis (10) caracteres combinando letras, números y nunca usar nombres propios o palabras fáciles de determinar por personas allegadas al USUARIO-TRABAJADOR, laboral o personalmente, como nombres, apellidos, teléfonos, placas etc. SEXTA: EL USUARIO-TRABAJADOR se compromete a usar los recursos informáticos puestos a su disposición o asignados temporalmente solo a las funciones específicas establecidas por un superior bajo las normas y procedimientos de buen comportamiento y prohibiciones de uso indebido de los sistemas de información y de comunicación. SEPTIMA: El USUARIO-TRABAJADOR acepta que toda la información a la que se tenga acceso sea a través de los sistemas Informáticos, cuentas de correo electrónico, claves de computadores o cualquier mecanismo antes mencionado como de los generados por ellos, como listados o reportes son de propiedad exclusiva de la Fiduprevisora S.A., y por lo tanto no podrá ser divulgada o entregada a terceros bajo <br><br>presiones o prebendas personales, pues será considerada como robo de bienes intangibles y castigada penalmente. OCTAVA: El USUARIO-TRABAJADOR, no obstante, podrá divulgar información clasificada
+                como reservada o confidencial en cualquiera de las siguientes eventualidades: a) Si existe autorización escrita para difundir la información, por parte de su propietario. b) En caso de que autoridades legales así lo requieran. c) En caso que la información sea o se vuelva de público conocimiento, siempre y cuando la parte receptora de la información no haya participado en su circulación. d) Si la información es suministrada en debida forma a la contraparte por una tercera persona, sin limitación de confidencialidad. Esto puede tener lugar antes o después de la revelación de la información reservada o confidencial. e) Si la información la desarrollan las partes independientemente, sin infracción de este acuerdo. NOVENA: Una vez cese el término de vinculo entra las partes o exista una terminación anticipada, toda información transmitida en cualquier forma de registro, grabado, u otra forma tangible, así como todas las copias de la información, deberán ser entregadas por el USUARIO-TRABAJADOR a la Fiduprevisora S.A., o a quien éste designe para tal efecto devolviendo las cuentas creadas o utilizadas por el USUARIO-TRABAJADOR a la Vicepresidencia de Tecnología e Información por escrito. DECIMA: Las obligaciones de mantener confidencial y bajo uso restringido la información privilegiada y protegida por este acuerdo, subsistirán durante un período de dos (2) años, contados a partir de la fecha de terminación de los procesos en los que cursan las partes. DECIMA PRIMERA: El USUARIO-TRABAJADOR se compromete a colocar el siguiente texto en todos los correos que se envíen de la empresa hacia fuera:
                 </p>
                 <p style="text-align: center;">
                     <b>NOTA DE CONFIDENCIALIDAD.</b>
                 </p>
                 " La información contenida en este correo y sus anexos es propiedad de Fiduprevisora S.A., es confidencial y solo puede ser utilizada por la persona o empresa a la cual está dirigida. Si Usted no es el receptor autorizado, cualquier retención, difusión, distribución o copia de este correo es prohibida y sancionada por la ley. Si por error recibe este correo, por favor reenviarlo al remitente de Fiduprevisora S.A. y/o borrar el correo inmediatamente. Toda distribución o copia de este documento sin la autorización expresa de Fiduprevisora S.A. es prohibida y sancionada por la ley" “Defensor del Consumidor Financiero – Dr. José Federico Ustariz González Cra. 11 A N°. 96 - 51  Oficina 203 Edificio Oficity Teléfonos 6108161 – 6108164 e-mail: defensoriafiduprevisora@ustarizabogados.com Atención de lunes a viernes jornada continua desde las 8:00 AM.  Si usted requiere información adicional acerca de la Defensoría del Consumidor Financiero, consúltenos de forma telefónica o diríjase directamente a las oficinas principales en la ciudad de Bogotá o a nuestras agencias. Para la presentación de quejas ante el Defensor del Consumidor no se exige ninguna formalidad, se sugiere que la misma contenga como mínimo los siguientes datos del reclamante: 1. Nombre 2. Identificación 3. Domicilio 4. Descripción de los hechos y/o derechos que considere que le han sido vulnerados.”
                 <p>
-                    En constancia de lo anterior, el presente acuerdo es suscrito en la ciudad de Bogotá D.C., a los ${Contratos.DIA FIRMA} días del mes de ${Contratos.MES DE FIRMA} deL ${Contratos.AÑO DE FIRMA}
+                    En constancia de lo anterior, el presente acuerdo es suscrito en la ciudad de Bogotá D.C., a los '+var_diaFirma+' días del mes de '+var_mesFirma+' deL '+var_anioFirma+'
                 </p>
                 <p style="text-align: left;">
-                    <br>Nombre: ${Contratos.NOMBRE DEL TRABAJADOR}
-                    <br>Identificación: ${Contratos.No IDENTIFICACION}
-                    <br>Cargo: ${Contratos.CARGO A DESEMPEÑAR}
-                    <br>Fecha:     ${Contratos.DIA FIRMA}/${Contratos.MES DE FIRMA}/${Contratos.AÑO DE FIRMA}
+                    <br>Nombre: '+var_nombre+'
+                    <br>Identificación: '+var_documento+'
+                    <br>Cargo: '+var_cargo+'
+                    <br>Fecha:     '+var_diaFirma+'/'+var_mesFirma+'/'+var_anioFirma+'
                     <br><br>
                     <br>Firma:{{SIGNATURE*}}
                 </p>
-            </div>
-            <div class="CONOCIMIENTO_INFORMADO_CÓDIGO_DISCIPLINARIO">
+                <br><br><br><br><br><br>
                 <table width=85% style="text-align: center">
                     <tr>
-                        <td>VERSIÓN 5</td>
-                        <td>FR-GTH-01-036</td>
+                        <td>VERSIÓN 1</td>
+                        <td>FR-GTH-01-037</td>
                     </tr>
                 </table>
-                <table width="90%">
+            </div>
+            <br>
+            <br>
+            <div class="CONOCIMIENTO_INFORMADO_CÓDIGO_DISCIPLINARIO" style="margin-top: 50px;">
+                
+                <table width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
                             <img src = "https://gestionhq5.com.co/recursos/fiduprevisora_logo.png"width="190"height="50" >
@@ -338,31 +322,35 @@
                         Como constancia de haber leído, entendido y aceptado lo anterior, firmo el presente documento: 
                     </p>
                     <br>
-                    <p>
-                    Nombre: ${Contratos.NOMBRE DEL TRABAJADOR}
-                    <br>Identificación: ${Contratos.No IDENTIFICACION}
-                    <br>Cargo: ${Contratos.CARGO A DESEMPEÑAR}
-                    <br>Fecha:     ${Contratos.DIA FIRMA}/${Contratos.MES DE FIRMA}/${Contratos.AÑO DE FIRMA}
-                    <br>Email personal: ${Contratos.CORREO ELECTRONICO}
-                    <br>Celular: ${Contratos.CELULAR}
+                    <p style="text-align: left;">
+                    Nombre: '+var_nombre+'
+                    <br>Identificación: '+var_documento+'
+                    <br>Cargo: '+var_cargo+'
+                    <br>Fecha:     '+var_diaFirma+'/'+var_mesFirma+'/'+var_anioFirma+'
+                    <br>Email personal: '+var_correo+'
+                    <br>Celular: '+var_telefono+'
                     <br>
                     <br>Firma: {{SIGNATURE*}}
                     </p>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <table width=85% style="text-align: center">
+                        <tr>
+                            <td>VERSIÓN 1</td>
+                            <td>FR-GTH-0-047</td>
+                        </tr>
+                    </table>
             </div>
-            <div>
-                <table width=85% style="text-align: center">
-                    <tr>
-                        <td>VERSIÓN 5</td>
-                        <td>FR-GTH-01-036</td>
-                    </tr>
-                </table>
-                <table width="90%">
+            <br>
+            <br>
+            <div class="NOTIFICACIÓN_LINEAMIENTOS_DE_LA_ENTIDAD" style="margin-top: 50px;">
+                
+                <table width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
                             <img src = "https://gestionhq5.com.co/recursos/fiduprevisora_logo.png"width="190"height="50" >
                         </td>
                         <td>
-                            <h4 style="text-align: center;">ACUERDO DE CONFIDENCIALIDAD PARA FUNCIONARIOS DE FIDUPREVISORA S.A.</h4>
+                            <h4 style="text-align: center;">NOTIFICACIÓN LINEAMIENTOS DE LA ENTIDAD.</h4>
                         </td>
                     </tr>
                 </table>
@@ -394,24 +382,29 @@
                     Como constancia de haber leído, entendido y aceptado lo anterior, firmo el presente documento:
                 </p>
                 <p style="text-align: left;">
-                    <br>Nombre: ${Contratos.NOMBRE DEL TRABAJADOR}
-                    <br>Identificación: ${Contratos.No IDENTIFICACION}
-                    <br>Cargo: ${Contratos.CARGO A DESEMPEÑAR}
+                    <br>Nombre: '+var_nombre+'
+                    <br>Identificación: '+var_documento+'
+                    <br>Cargo: '+var_cargo+'
                     <br>Dependencia: ________________________________
-                    <br>Fecha:     ${Contratos.DIA FIRMA}/${Contratos.MES DE FIRMA}/${Contratos.AÑO DE FIRMA}
+                    <br>Fecha:     '+var_diaFirma+'/'+var_mesFirma+'/'+var_anioFirma+'
                 </p>
                 <p>
                     Firma: {{SIGNATURE*}}
                 </p>
-            </div>
-            <div class="DECLARACIÓN_JURAMENTADA_PARA_VINCULACIÓN_DE_PERSONAL">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <table width=85% style="text-align: center">
                     <tr>
-                        <td>VERSIÓN 5</td>
-                        <td>FR-GTH-01-036</td>
+                        <td>VERSIÓN 4</td>
+                        <td>FR-GTH-03-023</td>
                     </tr>
                 </table>
-                <table width="90%">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="DECLARACIÓN_JURAMENTADA_PARA_VINCULACIÓN_DE_PERSONAL" style="margin-top: 50px;">
+                
+                <table width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
                             <img src = "https://gestionhq5.com.co/recursos/fiduprevisora_logo.png"width="190"height="50" >
@@ -433,19 +426,19 @@
                     <b>DECLARACION</b>
                 </p>
                 <p>
-                    Yo, ${Contratos.NOMBRE DEL TRABAJADOR} identificado (a) como aparece al pie de mi firma, declaro que la información suministrada en el siguiente formulario es cierta y fidedigna, por tanto, autorizo a Fiduciaria la Previsora S.A., para tomar las medidas correspondientes, en caso de detectar cualquier inconsistencia en la información consignada en este formulario, eximiendo a la entidad de toda responsabilidad que se derive de ello.
+                    Yo, '+var_nombre+' identificado (a) como aparece al pie de mi firma, declaro que la información suministrada en el siguiente formulario es cierta y fidedigna, por tanto, autorizo a Fiduciaria la Previsora S.A., para tomar las medidas correspondientes, en caso de detectar cualquier inconsistencia en la información consignada en este formulario, eximiendo a la entidad de toda responsabilidad que se derive de ello.
                 </p>
                 <p style="text-align: left;">
-                    Dirección de Residencia: ${Contratos.DIRECCION RESIDENCIA}
+                    Dirección de Residencia: '+var_dierccion+'
                     <br>Departamento y Ciudad: ________________________________________
                     <br>Número de teléfono de residencia: _________________________________
-                    <br>Numero de celular: ${Contratos.CELULAR}
-                    <br>Correo Electrónico: ${Contratos.CORREO ELECTRONICO}
+                    <br>Numero de celular: '+var_telefono+'
+                    <br>Correo Electrónico: '+var_correo+'
                 </p>
                 <p>
                     Y teniendo como parientes en primer grado de consanguinidad (Padres e Hijos) a: 
                 </p>
-                <table border="1" cellspacing="0" width="95%" style="text-align: center;">
+                <table border="1" cellspacing="0" width="95%" style="text-align: center;margin-left:auto; margin-right: auto;">
                     <tr>
                         <td width="33.3%"><b>NOMBRES Y APELLIDOS</b></td>
                         <td width="33.3%"><b> DOCUMENTO DE IDENTIFICACION</b></td>
@@ -475,7 +468,7 @@
                 <p>
                     <b>1.</b>      Actualmente poseo los siguientes bienes patrimoniales:
                 </p>
-                <table border="1" cellspacing="0" width="95%" style="text-align: center;">
+                <table border="1" cellspacing="0" width="90%" style="text-align: center;margin-left:auto; margin-right: auto;">
                     <tr>
                         <td width="33.3%"><b>TIPO DE BIEN</b></td>
                         <td width="33.3%"><b> IDENTIFICACION DEL BIEN</b></td>
@@ -505,7 +498,7 @@
                 <p>
                    <b>2.</b>       Las cuentas corrientes y de ahorro que poseo en Colombia y en exterior son:
                 </p>
-                <table border="1" cellspacing="0" width="95%" style="text-align: center;">
+                <table border="1" cellspacing="0" width="90%" style="text-align: center;margin-left:auto; margin-right: auto;">
                     <tr>
                         <td><b>ENTIDAD <br>FINANCIERA</b></td>
                         <td><b> TIPO DE CUENTA</b></td>
@@ -542,8 +535,9 @@
                         <td></td>
                     </tr>
                 </table>
+                <br><br>
                 <p><b>3.</b>    Las acreencias y obligaciones vigentes a la fecha son: </p>
-                <table border="1" cellspacing="0" width="95%" style="text-align: center;">
+                <table border="1" cellspacing="0" width="90%" style="text-align: center;margin-left:auto; margin-right: auto;">
                     <tr >
                         <td width="33.3%"><b>ENTIDAD O PERSONA</b></td>
                         <td width="33.3%"><b>  CONCEPTO </b></td>
@@ -574,7 +568,7 @@
                     <b>4.</b>      Ha pertenecido a Juntas, Consejos, Corporaciones, Sociedades y Asociaciones en calidad de socio o miembro:
                     <br>SI _______ NO _______ 
                 </p>
-                <table border="1" cellspacing="0" width="95%" style="text-align: center;">
+                <table border="1" cellspacing="0" width="90%" style="text-align: center;margin-left:auto; margin-right: auto;">
                     <tr>
                         <td width="50%"><b>ENTIDAD O INSTITUCIONES</b></td>
                         <td><b>CALIDAD (MIEMBRO O SOCIO)</b></td>
@@ -622,7 +616,7 @@
                     <br><br>
                     SI _________ NO ________ Explique:
                     <br>__________________________________________________________________________________________________________________________________________________
-                    <br><br>
+                    <br><br><br><br><br><br>
                     10.	¿Tiene conocimiento si alguno de sus familiares en primer grado de consanguinidad y afinidad posee inversiones en los Fondos de Inversión Colectiva de Fiduprevisora SA?
                     <br><br>
                     SI _________ NO ________ Explique:
@@ -635,29 +629,25 @@
                     Como constancia de haber leído, entendido y aceptado lo anterior, firmo el presente documento:
                 </p>
                 <p style="text-align: left;">
-                    <br>Nombre: ${Contratos.NOMBRE DEL TRABAJADOR}
-                    <br>Identificación: ${Contratos.No IDENTIFICACION}
-                    <br>Cargo: ${Contratos.CARGO A DESEMPEÑAR}
-                    <br>Fecha:     ${Contratos.DIA FIRMA}/${Contratos.MES DE FIRMA}/${Contratos.AÑO DE FIRMA}
+                    <br>Nombre: '+var_nombre+'
+                    <br>Identificación: '+var_documento+'
+                    <br>Cargo: '+var_cargo+'
+                    <br>Fecha:     '+var_diaFirma+'/'+var_mesFirma+'/'+var_anioFirma+'
                     <br><br>
                     <br>Firma:{{SIGNATURE*}}
                 </p>
-                <p>
+                <p style="text-align: left;">
                     CONFIDENCIALIDAD.  Las partes acuerdan que cualquier información intercambiada, facilitada o creada entre ellas en el transcurso de la relación laboral, será mantenida en estricta confidencialidad. 
                 </p>
-                <p>Revisó y aprobó,
+                <p style="text-align: left;">Revisó y aprobó,
                 <br>__________________________________	              
                 <br>Coordinador de Ciclo Laboral
                 </p>
             </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="AUTORIZACIÓN_DE_TRATAMIENTO_DE_DATOS_PERSONALES_PARA_BENEFICIARIOS_MENORES_DE_EDAD _E _UNCIONARIOS_DE_FIDUPREVISORA_S.A">
-                <table width=85% style="text-align: center">
-                    <tr>
-                        <td>VERSIÓN 5</td>
-                        <td>FR-GTH-01-036</td>
-                    </tr>
-                </table>
-                <table width="90%">
+                
+                <table width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
                             <img src = "https://gestionhq5.com.co/recursos/fiduprevisora_logo.png"width="190"height="50" >
@@ -687,21 +677,23 @@
                     En mi calidad de representante legal del menor, manifiesto que estoy informado del tratamiento de los datos personales del titular y que le he informado a mi representado sobre este tratamiento de datos personales.
                     <br>Expuesto lo anterior, autorizo la recolección y tratamiento de los datos del menor, en mi calidad de representante legal del mismo.
                 </p>
-                <p>
+                <br><br><br>
+                <p style="margin-top: 20px;">
                     Declaro conocer y aceptar de manera expresa y por escrito, el contenido de la presente solicitud de autorización, así como el contenido de la política de protección de datos personales de Fiduprevisora S.A.
                     <br>La política de tratamiento de datos personales y el aviso de privacidad los puede consultar en la página web de la entidad.
                     <br>Por lo anterior, SI___  NO___   autorizo de manera voluntaria, previa, explícita, informada e inequívoca a Fiduprevisora para que los datos obtenidos sean utilizados para las finalidades anteriormente indicadas. 
                 </p>
                 <br><br><br><br>
-                <p>
+                <p style="text-align: left;">
                     ______________________________________
                     <br>NOMBRE REPRESENTATE LEGAL:
                     <br>C.C.
                     <br>Fecha: ________________________________
                 </p>
             </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="PROCESO_DE_DESVINCULACIÓN_PAZ_Y _ALV_">
-                <table width="90%">
+                <table width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
                             <img src = "https://gestionhq5.com.co/recursos/fiduprevisora_logo.png"width="190"height="50" >
@@ -720,19 +712,19 @@
                         </td>
                     </tr>
                 </table>
-                <table border="1" cellspacing="0" width="95%">
+                <table border="1" cellspacing="0" width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
                             Nombre
                         </td>
                         <td>
-                            ${Contratos.NOMBRE DEL TRABAJADOR}
+                            '+var_nombre+'
                         </td>
                         <td>
                             Cargo
                         </td>
                         <td>
-                            ${Contratos.CARGO A DESEMPEÑAR}
+                            '+var_cargo+'
                         </td>
                     </tr>
                     <tr>
@@ -740,7 +732,7 @@
                             cc	
                         </td>
                         <td>
-                            ${Contratos.No IDENTIFICACION}
+                            '+var_documento+'
                         </td>
                         <td>
                             Área
@@ -748,6 +740,325 @@
                         <td>
                             
                         </td>
+                    </tr>
+                </table>
+                <table border="1" cellspacing="0" width="90%" style="font-size: 12px; margin-left:auto; margin-right: auto;">
+                    <tr style="font-size: 14px; text-align: center;">
+                        <td>
+                            <b>N°</b>
+                        </td>
+                        <td>
+                            <b>Área   </b>
+                        </td>
+                        <td>
+                            <b>Temas, documentos, elementos debidamente entregados:    </b>
+                        </td>
+                        <td>
+                            <b>Revisó (gestor)</b>
+                        </td>
+                        <td>
+                            <b>VoBo o N/A</b>
+                        </td>
+                        <td>
+                            <b>Fecha</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Vicepresidencia de Tecnología e Información
+                        </td>
+                        <td>
+                            • Cancelación niveles de accesos, correo, permisos y aplicaciones, bases de datos
+                            <br>• Entrega herramientas tecnológicas asignadas – Mesa de Ayuda
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            Gerencia de Adquisiciones y Contratación
+                        </td>
+                        <td>
+                            •	Informes finales de supervisión
+                            <br>•	Supervisión de contratos 
+                            <br><b>Aplica únicamente para retiro de personal de nivel directivo</b>
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            Auditoría Corporativa
+                        </td>
+                        <td>
+                            •	Cierre o reasignación de NC, AP y AM - SGCI*
+                            <br>No aplica para practicantes ni aprendices.
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            Gerencia Nacional de Planeación
+                        </td>
+                        <td>
+                            •	Cierre o reasignación de NC, AP y AM - SGC*
+                            <br>•	Cierre o reasignación de NC, AP y AM - SGSI*
+                            <br>•	Cierre o reasignación de NC, AP y AM - SGA*
+                            <br>•	Planes, programas ** 
+                            <br>•	Tarjetas de Mejoramiento
+                            <br>* No Aplica para practicantes ni aprendices
+                            <br>** No aplica para temporales
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5
+                        </td>
+                        <td>
+                            Gerencia de Gestión Documental
+                        </td>
+                        <td>
+                            •	Validación de cierre o reasignación de comunicaciones oficiales 
+                            <br>•	Entrega de documentos y/o carpetas del archivo en calidad de préstamo
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            6
+                        </td>
+                        <td>
+                            Gerencia de Tesorería
+                        </td>
+                        <td>
+                            •	Cancelaciones claves de portales bancarios 
+                            <br>•	Entrega de token
+                            <br>No aplica para las áreas de las Vicepresidencias Jurídica y Comercial
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            7
+                        </td>
+                        <td>
+                            Gerencia de Riesgos
+                        </td>
+                        <td>
+                            •	Inactivación aplicativos de Inversión
+                            <br>•	Desvinculación registro SIMEV
+                            <br>•	Inactivación aplicativo CERO (SARO/SARLAFT)
+                            <br>•	Capacitación SARO/SARLAFT
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            8
+                        </td>
+                        <td>
+                            Gerencia de Back Office
+                        </td>
+                        <td>
+                            Inactiva usuario y/o reasignación actividades aplicativo Flexifon
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            9
+                        </td>
+                        <td>
+                            Vicepresidencia Jurídica
+                        </td>
+                        <td>
+                            •	Inactiva usuario y/o reasignación actividades aplicativo Orión
+                            <br>•	Inactiva usuario o reasignación actividades aplicativo Legis
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            10
+                        </td>
+                        <td>
+                            Vicepresidencia de Negocios Fiduciarios
+                        </td>
+                        <td>
+                            Inactiva usuario o reasignación actividades aplicativo Legis
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            11
+                        </td>
+                        <td>
+                            Dirección de Servicio al Cliente
+                        </td>
+                        <td>
+                            Verificación de trámites en el árbol de tipificación 
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            12
+                        </td>
+                        <td>
+                            Dirección de Recursos Físicos
+                        </td>
+                        <td>
+                            •	Cancelación acceso/tarjeta parqueadero (si aplica)
+                            <br>•	Entrega activos fijos y elementos a su cargo
+                            <br>•     Cancelación de huella
+                            <br>•     Paz y salvo viáticos
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            13
+                        </td>
+                        <td>
+                            Gerencia de Talento Humano
+                            <br><b>Solo aplica para personal de planta</b>
+                        </td>
+                        <td>
+                            Verificación obligaciones pendientes de nómina
+                            <br>Evaluación de desempeño del personal a cargo
+                            <br><b>Aplica únicamente para retiro de personal de nivel directivo</b>
+                            <br>Reporte desvinculación en el Autorregulador del Mercado de Valores (AMV), si aplica.
+                            <br>Reporte desvinculación en el Autorregulador del Mercado de Valores (AMV), si aplica.
+                            <br>Entrega carné de Identificación
+                            <br>Anexo declaración bienes y rentas por retiro firmada
+                            <br>Asignación examen médico de retiro
+                            <br>Entrevista de Retiro
+                            <br>Copia de acta entrega de cargo con VoBo del jefe inmediato
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+                <table width=85% style="text-align: center">
+                    <tr>
+                        <td>VERSIÓN 19</td>
+                        <td>FR-GTH-03-001</td>
                     </tr>
                 </table>
             </div>
