@@ -100,9 +100,10 @@
                     </tr>
                 </table>
             </div>
-            <br>
-            <div class="AUTORIZACIÓN_DE_TRATAMIENTO_DE_DATOS_PERSONALES_PARA_FUNCIONARIOS_DE _IDUPREVISORA_S.A" style="margin-top: 50px;">
-                <table width="90%" style="margin-left:auto; margin-right: auto;margin-top: 10px;">
+            <br><br>
+            <div class="AUTORIZACIÓN_DE_TRATAMIENTO_DE_DATOS_PERSONALES_PARA_FUNCIONARIOS_DE _IDUPREVISORA_S.A">
+                <br>
+                <table width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
                             <img src = "https://gestionhq5.com.co/recursos/fiduprevisora_logo.png"width="190"height="50" style="margin-top: 20px;">
@@ -175,7 +176,7 @@
                     La política de tratamiento de datos personales y el aviso de privacidad los puede consultar en la página web de la entidad; la reglamentación en relación con la protección de datos los puede consultar en el documento “ML-ESC-05-002 Manual del Sistema de Gestión de Continuidad del Negocio.”, o los documentos que lo modifiquen o sustituyan, que se encuentran publicados en el Sistema de Gestión de Calidad de Fiduprevisora.
                 </p>
                 <p>
-                    Por lo anterior, SI __ NO __  autorizo de manera voluntaria, previa, explícita, informada e inequívoca a Fiduprevisora para que los datos obtenidos sean utilizados para las finalidades anteriormente indicadas.  
+                    Por lo anterior, SI {{Checkbox}} NO {{Checkbox}}  autorizo de manera voluntaria, previa, explícita, informada e inequívoca a Fiduprevisora para que los datos obtenidos sean utilizados para las finalidades anteriormente indicadas.  
                 </p>
                 <br><br><br>
                 <h4 style="display:block; ">DATOS SENSIBLES</h4>
@@ -183,7 +184,7 @@
                 <p>Entiendo que son datos sensibles aquellos que afectan la intimidad del Titular o cuyo uso indebido puede generar discriminación. </p>
                 <p>De igual forma, autorizo de manera voluntaria, previa, explícita, informada e inequívoca el tratamiento de mis datos que son de naturaleza sensible y por ende requiere mi autorización, para las siguientes finalidades:</p>
                 <br><br><br><br><br>
-                <p>1.	Los datos personales biométricos (huella digital) registrado en dispositivos y sistemas biométricos, los cuales se utilizarán para fines de seguridad, control de acceso y horario, y podrán ser utilizados como prueba en cualquier tipo de proceso, de conformidad con las disposiciones legales vigentes. SI __ NO __ </p>
+                <p>1.	Los datos personales biométricos (huella digital) registrado en dispositivos y sistemas biométricos, los cuales se utilizarán para fines de seguridad, control de acceso y horario, y podrán ser utilizados como prueba en cualquier tipo de proceso, de conformidad con las disposiciones legales vigentes. SI {{Checkbox}} NO {{Checkbox}} </p>
                 <p>Si el empleado firma que No da su consentimiento al tratamiento de los datos personales, contemplados en los numerales anteriores, la empresa no podrá hacer uso de esta información a excepción de los que son regulados por la Ley.</p>
                 <p style="text-align: left;">
                     <br>Nombre: '+var_nombre+'
@@ -202,8 +203,8 @@
                     </tr>
                 </table>
             </div>
-            <div class="AUTORIZACIÓN_DE_TRATAMIENTO_DE_DATOS_PERSONALES_PARA_BENEFICIARIOS_MAYORES_DE_EDAD_DE_FUNCIONARIOS_DE_FIDUPREVISORA_S.A" style="margin-top: 50px;">
-                
+            <div class="AUTORIZACIÓN_DE_TRATAMIENTO_DE_DATOS_PERSONALES_PARA_BENEFICIARIOS_MAYORES_DE_EDAD_DE_FUNCIONARIOS_DE_FIDUPREVISORA_S.A" style="margin-top: 50px;font-size: 15px;">
+                <br>
                 <table width="90%" style="margin-left:auto; margin-right: auto;">
                     <tr>
                         <td>
@@ -232,7 +233,7 @@
                 <p>
                     Declaro conocer y aceptar de manera expresa y por escrito, el contenido de la presente solicitud de autorización, así como el contenido de la política de protección de datos personales de Fiduprevisora S.A.
                     <br>La política de tratamiento de datos personales y el aviso de privacidad los puede consultar en la página web de la entidad.   
-                    <br>Por lo anterior, SI ____ NO ___ autorizo de manera voluntaria, previa, explícita, informada e inequívoca a Fiduprevisora para que los datos obtenidos sean utilizados para las finalidades anteriormente indicadas.   
+                    <br>Por lo anterior, SI {{Checkbox}} NO {{Checkbox}} autorizo de manera voluntaria, previa, explícita, informada e inequívoca a Fiduprevisora para que los datos obtenidos sean utilizados para las finalidades anteriormente indicadas.   
                 </p>
                 <p style="text-align: left;">Firma: {{SIGNATURE*}}
                 <br>Nombre: '+var_nombre+'
@@ -431,8 +432,8 @@
                 </p>
                 <p style="text-align: left;">
                     Dirección de Residencia: '+var_dierccion+'
-                    <br>Departamento y Ciudad: ________________________________________
-                    <br>Número de teléfono de residencia: _________________________________
+                    <br>Departamento y Ciudad:'+var_lugarEmpresaUsuaria+'
+                    <br>Número de teléfono de residencia: '+var_telefono+','+var_telefonoFijo+'
                     <br>Numero de celular: '+var_telefono+'
                     <br>Correo Electrónico: '+var_correo+'
                 </p>
@@ -446,24 +447,24 @@
                         <td><b> PARENTESCO</b></td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                 </table>
                 <p>
@@ -476,30 +477,30 @@
                         <td><b>  VALOR</b></td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                 </table>
                 <p>
                    <b>2.</b>       Las cuentas corrientes y de ahorro que poseo en Colombia y en exterior son:
                 </p>
-                <table border="1" cellspacing="0" width="90%" style="text-align: center;margin-left:auto; margin-right: auto;">
+                <table border="1" cellspacing="0" width="90%" style="text-align: center;margin-left:auto; margin-right: auto; font-size: 14px;">
                     <tr>
                         <td><b>ENTIDAD <br>FINANCIERA</b></td>
                         <td><b> TIPO DE CUENTA</b></td>
@@ -508,32 +509,32 @@
                         <td><b> SALDO DE LA <br>CUENTA</b></td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                 </table>
                 <br><br>
@@ -545,29 +546,29 @@
                         <td><b> VALOR</b></td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                 </table>
                 <p>
-                    <b>4.</b>      Ha pertenecido a Juntas, Consejos, Corporaciones, Sociedades y Asociaciones en calidad de socio o miembro:
-                    <br>SI _______ NO _______ 
+                    <b>4.</b>  Ha pertenecido a Juntas, Consejos, Corporaciones, Sociedades y Asociaciones en calidad de socio o miembro:
+                    <br>SI {{Checkbox}} NO {{Checkbox}}
                 </p>
                 <table border="1" cellspacing="0" width="90%" style="text-align: center;margin-left:auto; margin-right: auto;">
                     <tr>
@@ -575,56 +576,56 @@
                         <td><b>CALIDAD (MIEMBRO O SOCIO)</b></td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                     <tr>
-                        <td>.</td>
-                        <td></td>
+                        <td>{{Textfield}}</td>
+                        <td>{{Textfield}}</td>
                     </tr>
                 </table>
                 <p style="text-align: left;">
                     5.	En la actualidad 
                     <br><br>
-                    SI ____ NO _____ tengo sociedad conyugal o de hecho vigente con:
+                    SI {{Checkbox}} NO {{Checkbox}} tengo sociedad conyugal o de hecho vigente con:
                     <br><br>
-                    Nombre y apellido del cónyuge: _______________________________________________
-                    <br>Documento de identificación: _________________________________________________
+                    Nombre y apellido del cónyuge: {{Textfield}}
+                    <br>Documento de identificación:{{Textfield}}
                     <br><br>
                     6.	Ha tenido embargos  
                     <br><br>
-                    SI _____   NO _____ de qué tipo: ___________________________________________
+                    SI {{Checkbox}} NO {{Checkbox}} de qué tipo:{{Textfield}}
                     <br><br>
                     7.	¿Ha sido sancionado o tiene algún proceso vigente en alguna entidad de la cual deba tener conocimiento la Fiduciaria?   
                     <br><br>
-                    SI ______   NO ______ Explique:
-                    <br>__________________________________________________________________________________________________________________________________________________
+                    SI {{Checkbox}} NO {{Checkbox}} Explique:
+                    <br>{{Textfield}}
                     <br><br>
                     8.	¿Hay alguna situación adicional que quiera poner en conocimiento la Fiduciaria? 
                     <br><br>
-                    SI _________  NO ________  Explique:
-                    <br>__________________________________________________________________________________________________________________________________________________
+                    SI {{Checkbox}} NO {{Checkbox}} Explique:
+                    <br>{{Textfield}}
                     <br><br>
                     9.	¿Actualmente posee inversiones en los Fondos de Inversión Colectiva de Fiduprevisora SA?
                     <br><br>
-                    SI _________ NO ________ Explique:
-                    <br>__________________________________________________________________________________________________________________________________________________
-                    <br><br><br><br><br><br>
+                    SI {{Checkbox}} NO {{Checkbox}}Explique:
+                    <br>{{Textfield}}
+                    <br><br>
                     10.	¿Tiene conocimiento si alguno de sus familiares en primer grado de consanguinidad y afinidad posee inversiones en los Fondos de Inversión Colectiva de Fiduprevisora SA?
                     <br><br>
-                    SI _________ NO ________ Explique:
-                    <br>__________________________________________________________________________________________________________________________________________________
+                    SI {{Checkbox}} NO {{Checkbox}} Explique:
+                    <br>{{Textfield}}
                 </p>
                 <p>
-                    Nota: Con el fin de evitar posibles conflictos de interés en el desarrollo de sus funciones asignadas, los funcionarios deben tener en cuenta el cumplimiento de las conductas prohibidas, así como las situaciones de incompatibilidad e inhabilidades contempladas a lo largo del código de conducta ética de la entidad. Nos permitimos informar que los funcionarios asignados a las siguientes áreas (ver listado) y sus familiares, en primer grado de consanguinidad y afinidad, no pueden mantener inversiones en los Fondos de Inversión Colectiva administrados por Fiduprevisora S.A. En caso de que usted se encuentre en proceso de selección para ingresar a una de las áreas donde aplica la restricción, debe tener en cuenta que, para no ir en contravía del Código de Conducta Ética de la entidad, deberá comprometerse cancelar su inversión en el próximo plazo de permanencia del fondo que tenga contratado, así como sus familiares, en primer grado de afinidad y consanguinidad en caso de que tengan inversiones, para no incurrir en faltas a las políticas de la entidad. Listado de áreas con restricción de inversión: Presidente, miembros de Junta Directiva (principales y suplentes), miembros del Comité de Auditoria, miembros permanentes del Comité de Riesgos, miembros del Comité de Inversiones, Unidad de Control Disciplinario, Gerencia de Riesgos, Vicepresidencia de Inversiones, Vicepresidencia Comercial (salvo Gerencia de Estructuración).
+                   <br><br> Nota: Con el fin de evitar posibles conflictos de interés en el desarrollo de sus funciones asignadas, los funcionarios deben tener en cuenta el cumplimiento de las conductas prohibidas, así como las situaciones de incompatibilidad e inhabilidades contempladas a lo largo del código de conducta ética de la entidad. Nos permitimos informar que los funcionarios asignados a las siguientes áreas (ver listado) y sus familiares, en primer grado de consanguinidad y afinidad, no pueden mantener inversiones en los Fondos de Inversión Colectiva administrados por Fiduprevisora S.A. En caso de que usted se encuentre en proceso de selección para ingresar a una de las áreas donde aplica la restricción, debe tener en cuenta que, para no ir en contravía del Código de Conducta Ética de la entidad, deberá comprometerse cancelar su inversión en el próximo plazo de permanencia del fondo que tenga contratado, así como sus familiares, en primer grado de afinidad y consanguinidad en caso de que tengan inversiones, para no incurrir en faltas a las políticas de la entidad. Listado de áreas con restricción de inversión: Presidente, miembros de Junta Directiva (principales y suplentes), miembros del Comité de Auditoria, miembros permanentes del Comité de Riesgos, miembros del Comité de Inversiones, Unidad de Control Disciplinario, Gerencia de Riesgos, Vicepresidencia de Inversiones, Vicepresidencia Comercial (salvo Gerencia de Estructuración).
                 </p>
                 <p>
                     Como constancia de haber leído, entendido y aceptado lo anterior, firmo el presente documento:
@@ -645,7 +646,7 @@
                 <br>Coordinador de Ciclo Laboral
                 </p>
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="AUTORIZACIÓN_DE_TRATAMIENTO_DE_DATOS_PERSONALES_PARA_BENEFICIARIOS_MENORES_DE_EDAD _E _UNCIONARIOS_DE_FIDUPREVISORA_S.A">
                 
                 <table width="90%" style="margin-left:auto; margin-right: auto;">
