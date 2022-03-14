@@ -15,7 +15,7 @@
                 <br>
                 <p style="text-align: right;">Version 3 FR-GTH-01-036</p> 
                 <h4 style="text-align: center;">ACUERDO DE CONFIDENCIALIDAD PARA FUNCIONARIOS DE FIDUPREVISORA S.A</h4>
-                <p>___________________________________, quien obra en su calidad de Presidente de FIDUCIARIA LA PREVISORA S.A., “FIDUPREVISORA S.A”, de una parte, quien en adelante se llamará LA FIDUCIARIA y de la otra parte ${Contratos.NOMBRE DEL TRABAJADOR}, identificado (a) con ${Contratos.TIPO DE DOCUMENTO} No.${Contratos.No IDENTIFICACION} de ${Contratos.LUGAR DE EXPEDICIÓN}, que de ahora en adelante se llamará USUARIO.-TRABAJADOR, hemos determinado por el presente documento adoptar el ACUERDO DE CONFIDENCIALIDAD Y RESPONSABILIDAD POR EL USO DE LOS SISTEMAS INFORMÁTICOS DE LA ENTIDAD, que se regirá por los siguientes artículos: </p>
+                <p>___________________________________, quien obra en su calidad de Presidente de FIDUCIARIA LA PREVISORA S.A., “FIDUPREVISORA S.A”, de una parte, quien en adelante se llamará LA FIDUCIARIA y de la otra parte '+var_nombre+', identificado (a) con '+var_tipoDoc+' No.'+var_documento+' de '+var_LugarExpedicionDoc+', que de ahora en adelante se llamará USUARIO.-TRABAJADOR, hemos determinado por el presente documento adoptar el ACUERDO DE CONFIDENCIALIDAD Y RESPONSABILIDAD POR EL USO DE LOS SISTEMAS INFORMÁTICOS DE LA ENTIDAD, que se regirá por los siguientes artículos: </p>
                 <p>CONSIDERACIONES </p>
                 <p>Primero. Que FIDUPREVISORA, ha acordado usar los servicios del USUARIO-TRABAJADOR para soportar los procesos en los proyectos adelantados por ella. </p>
                 <p>Segundo. Que para poder realizar la labor descrita, las partes deben intercambiar información clasificada como reservada o confidencial, de acuerdo a los criterios establecidos por la entidad y facilitar herramientas que permitan acceder a la información de la FIDUPREVISORA. </p>
@@ -44,13 +44,13 @@
                 <p>NOTA DE CONFIDENCIALIDAD.</p>
                 <p>“La información contenida en este correo y sus Anexos es confidencial y solo puede ser utilizada por la persona o empresa a la cual está dirigida, Si Usted no es el receptor autorizado, cualquier retención, difusión, distribución o copia de este correo es prohibida y sancionada por la ley. Si por error recibe este correo, por favor reenviarlo a remitente de la FIDUPREVISORA S.A. y/o borrar el correo inmediatamente.</p>
                 <p>Esta información es propiedad de FIDUPREVISORA S.A. toda distribución o copia de este documento sin la autorización expresa de FIDUPREVISORA S.A. es prohibida y sancionada por la ley."</p>
-                <p>En constancia de lo anterior, el presente Acuerdo es suscrito en la ciudad de Bogotá D.C. a los ${Contratos.DIA FIRMA} días del mes de ${Contratos.MES DE FIRMA} de ${Contratos.AÑO DE FIRMA}</p>
+                <p>En constancia de lo anterior, el presente Acuerdo es suscrito en la ciudad de Bogotá D.C. a los '+var_diaFirma+' días del mes de '+var_mesFirma+' de '+var_anioFirma+'</p>
                 <br>
                 <br>
                 <p style="text-align: right;">
                     _________________________________________
-                <br>${Contratos.NOMBRE DEL TRABAJADOR}
-                <br>${Contratos.TIPO DE DOCUMENTO} : ${Contratos.No IDENTIFICACION}</p>
+                <br>'+var_nombre+'
+                <br>'+var_tipoDoc+' : '+var_documento+'</p>
             </div>
             <br><br><br><br>
             <div class="AUTORIZACIÓN_DE_TRATAMIENTO_DE_DATOS_PERSONALES_PARA_FUNCIONARIOS_DE_FIDUPREVISORA_S.A ">
@@ -85,8 +85,8 @@
                 <p>
                     Si desea conocer más acerca de cómo FIDUPREVISORA trabaja por la seguridad y protección de su información personal, así como la forma y mecanismos para el ejercer sus derechos como titular de información, puede acceder a la política de protección de datos personales en el siguiente link www.fiduprevisora.com.co o solicitándola a través de los canales previamente descritos. Con la firma del presente formato Usted está autorizando de manera expresa e inequívoca el tratamiento de los datos personales. 
                 </p>
-                <p style="text-align: left;">Nombre: ${Contratos.NOMBRE DEL TRABAJADOR}
-                   <br> Fecha:${Contratos.DIA FIRMA} / ${Contratos.MES DE FIRMA} / ${Contratos.AÑO DE FIRMA}
+                <p style="text-align: left;">Nombre: '+var_nombre+'
+                   <br> Fecha:'+var_diaFirma+' / '+var_mesFirma+' / '+var_anioFirma+'
                     <br><br><br><br>
                     ______________________________
                     <br>Firma 
@@ -141,7 +141,7 @@
                 <img src="https://gestionhq5.com.co/recursos/fiduprevisoraContratoGeneral_logo.png" width="270" height="70">
                 <h4 style="text-align: center;">NOTIFICACIÓN LINEAMIENTOS DE LA ENTIDAD</h4>
                 <p style="text-align: left;">
-                    Bogotá D.C, ${Contratos.DIA FIRMA} / ${Contratos.MES DE FIRMA} / ${Contratos.AÑO DE FIRMA}
+                    Bogotá D.C, '+var_diaFirma+' / '+var_mesFirma+' / '+var_anioFirma+'
                     <br>
                     <br>Señores:
                     <br>Fiduprevisora S.A
@@ -165,9 +165,9 @@
                 <p style="text-align: left;">
                     <br>Cordialmente,
                     <br>
-                    <br>Nombre: ${Contratos.NOMBRE DEL TRABAJADOR}
+                    <br>Nombre: '+var_nombre+'
                     <br>
-                    <br>Cargo: ${Contratos.CARGO A DESEMPEÑAR}
+                    <br>Cargo: '+var_cargo+'
                     <br>
                     <br>
                     <br>Firma:     ____________________________________
