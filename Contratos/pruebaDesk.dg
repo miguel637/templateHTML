@@ -1,0 +1,42 @@
+IdOrganizacion =; //Id de la organizacion, se encuentra en Espacio del desarrollador - API
+idTicket = ;//Id del ticket que desea actualizar
+datosTicket = map();
+datosTicket.put("subject"://Asunto del correo del ticket);
+datosTicket.put("departmentId"://ID del departamento que va a atender); 
+datosTicket.put("contactId"://ID del contacto registrado en desk); 
+datosTicket.put("email"://Correo del contacto o del email del cliente);
+datosTicket.put("phone"://Teléfono del cliente que genera el ticket);
+datosTicket.put("description"://Descripción del ticket);
+datosTicket.put("status"://Estados del ticket (Abierto, cerrado o los estados que manejen));
+datosTicket.put("assigneeId"://Id del Agente que atenderá el ticket); 
+
+//Campos creados (no nativos del sistema)
+miscampos = map();
+miscampos.put("cf_micampo1":"Valor del campo");
+miscampos.put("cf_micampo2":"Valor del campo");
+datosTicket.put("cf":miscampos);
+
+actualizarTicket = zoho.desk.update(IdOrganizacion, "tickets", idTicket, datosTicket);
+
+
+IdOrganizacion =; //Id de la organizacion, se encuentra en Espacio del desarrollador - API
+datosTicket = map();
+datosTicket.put("subject"://Asunto del correo del ticket);
+datosTicket.put("departmentId"://ID del departamento que va a atender);  OBLIGATORIO
+datosTicket.put("contactId"://ID del contacto registrado en desk);       OBLIGATORIO
+datosTicket.put("email"://Correo del contacto o del email del cliente);
+datosTicket.put("phone"://Teléfono del cliente que genera el ticket);
+datosTicket.put("description"://Descripción del ticket);
+datosTicket.put("status"://Estados del ticket (Abierto, cerrado o los estados que manejen));
+datosTicket.put("assigneeId"://Id del Agente que atenderá el ticket);
+
+//Campos creados (no nativos del sistema)
+miscampos = map();
+miscampos.put("cf_micampo1":"Valor del campo");
+miscampos.put("cf_micampo2":"Valor del campo");
+datosTicket.put("cf":miscampos);
+
+nuevoTicket = zoho.desk.create(IdOrganizacion, "tickets", datosTicket);
+
+
+
