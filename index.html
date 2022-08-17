@@ -5,41 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"> 
     <meta name="x-apple-disable-message-reformatting">
   
-    <style> body { background-color: white !important; } 
-    table, td, div, h1, p { font-family: Arial, sans-serif; }
-    .responsable
-    {
-      width: 70%;
-      background-color: rgb(255, 144, 162); 
-      border-radius: 20px;
-      padding: 1px 5px 15px 15px;
-      margin-bottom: 5px;
-      float: left;
-    }
-    .solicitante
-    {
-      width: 70%;
-      background-color: rgb(255, 198, 198); 
-      border-radius: 20px; 
-      padding: 1px 0px 15px 15px;
-      margin-bottom: 5px;
-      float: right;
-      text-align: left;
-    }
-    @media screen and (max-width: 530px) 
-    {
-     .unsub 
-    { 
-      display: block; 
-      padding: 8px; 
-      margin-top: 14px; 
-      border-radius: 6px; 
-      background-color: #f8f8f8; 
-      text-decoration: none !important; 
-      font-weight: bold;
-      float: left;
-      }
-      .col-lge { max-width: 100% !important; } } @media screen and (min-width: 531px) { .col-sml { max-width: 27% !important; } .col-lge { max-width: 73% !important; } } 
+    <style> 
+      body { background-color: white !important; } 
+      table, td, div, h1, p { font-family: Arial, sans-serif; }
     </style> 
   </head> 
   <body style="margin:0;padding:0;word-spacing:normal;background-color:#ffffff;"> 
@@ -55,50 +23,30 @@
               </tr> 
               <tr> 
                 <td style="padding:30px;background-color:#ffffff;"> 
-                  <h1 style="margin-top:0;margin-bottom:16px;font-size:26px;line-height:32px;font-weight:bold;letter-spacing:-0.02em;">Hola, tu ticket fue actulizado</h1> 
-                  <p style="margin:0; text-align: justify;">Tu tickets #+'input.ticket+' fue actulizado, valida que ha pasado con tu solicitud</p> 
-                  <h4 style="text-align: center;">Hilo del ticket</h4>
-                  <div class="chat" style="width: 100%;">
-                    <div class="responsable">
-                      <p style="padding-left: 10px;"><b>Usuario A</b><br> Se ha realizado el pago de la nomina de Ranza, sin emabargo se retiene pago de 1019510059 </p>
-                      <b><a style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); padding: 5px 2px 5px 5px; text-decoration: none; border-radius: 10px;" href="http://www.google.com">Descargar adjunto</a></b>
-                    </div>
-                    <div class="solicitante">
-                      <p style="padding-left: 10px;"><b>Usuario B</b><br>ok entiendo, si ese man me cae mal, la proxima paseme el nombre </p>
-                    </div>
-                    <div class="responsable">
-                     <p style="padding-left: 10px;"><b>Usuario A</b><br> Se ha realizado el pago de la nomina de Ranza, sin emabargo se retiene pago de 1019510059 </p>
-                      <a style="padding-left: 10px;" href="http://www.google.com">Descargar adjunto</a>
-                    </div>
-                    <div class="solicitante">
-                      <p style="padding-left: 10px;"><b>Usuario A</b><br>ok</p>
-                     </div>
-                  </div>
-                  </tr>
-                  <tr>
-                    <table align="center" style="background-color: white; width: 100%;">
-                      <tr>
-                        <td align="center">
-                          <p style="border-radius: 30px; background-color: rgb(235, 74, 74); color: white; padding: 15px 15px; font-size: 12px; text-align: center; max-width: 200px;"><b><a href="https://www.google.com" style="text-decoration: none; color: white;">Responder ticket</a></b></p>
-                        </td>
-                      </tr>
+                  <h1 style="margin-top:0;margin-bottom:16px;font-size:26px;line-height:32px;font-weight:bold;letter-spacing:-0.02em; text-align: center;">Estos son tus tickets que aún no han sido cerrados</h1> 
+                  <p style="margin:0; text-align: center;">A continuación encontraras tus tickets que estan pronto a vecer y vencidos.</p> 
+                  <div style="text-align: center; align-items: center; padding-top: 20px;">
+                    <table style="text-align: center; width: 100%; background-color: rgb(0, 0, 0);">
+                      <tr style="background-color: red;"><td>#Ticket</td><td>Asunto</td><td>Tiempo restante</td></tr>
+                      <tr style="background-color: white;"><td>'+input.numeroTicket+'</td><td>'+input.Asunto+'</td><td>'+tiempoRestante_+'</td></tr>
                     </table>
-                  </tr> 
+                  </div>
+                  
                 <tr> 
                   <td style="padding:30px;text-align:center;font-size:12px;background-color:#404040;color:#cccccc;">
                       <a href="https://www.facebook.com/hq5sas" style="text-decoration:none;">
                         <img src="https://gestionhq5.com.co/recursos/iconosRedes/facebook.png" width="40" height="40" alt="facebook" style="display:inline-block;color:#cccccc; margin: 2px;">
                       </a> 
-                      <a href="https://www.facebook.com/hq5sas" style="text-decoration:none;">
+                      <a href="https://www.instagram.com/hq5_sas/" style="text-decoration:none;">
                         <img src="https://gestionhq5.com.co/recursos/iconosRedes/instagram.png" width="40" height="40" alt="instagram" style="display:inline-block;color:#cccccc; margin: 2px;">
                       </a> 
                       <a href="https://web.whatsapp.com/send?phone=573009120781" style="text-decoration:none;">
                         <img src="https://gestionhq5.com.co/recursos/iconosRedes/whatsapp.png" width="40" height="40" alt="whatsapp" style="display:inline-block;color:#cccccc; margin: 2px;">
                       </a> 
-                      <a href="https://www.facebook.com/hq5sas" style="text-decoration:none;">
+                      <a href="https://www.linkedin.com/company/40658638/admin/" style="text-decoration:none;">
                         <img src="https://gestionhq5.com.co/recursos/iconosRedes/linkedin.png" width="40" height="40" alt="linkedin" style="display:inline-block; color:#cccccc; margin: 2px;">
                       </a> 
-                      <a href="https://www.facebook.com/hq5sas" style="text-decoration:none;">
+                      <a href="https://www.tiktok.com/@hq5_sas" style="text-decoration:none;">
                         <img src="https://gestionhq5.com.co/recursos/iconosRedes/tiktok.png" width="40" height="40" alt="tiktok" style="display:inline-block;color:#cccccc; margin: 2px;">
                       </a>
                     <p style="margin:0;font-size:14px;line-height:20px;">&reg; HQ5, HQ5 2021<br><a class="unsub" href="http://www.example.com/" style="color:#cccccc;text-decoration:underline;">Más información</a></p> 
